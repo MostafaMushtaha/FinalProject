@@ -24,9 +24,8 @@ import { AvatarModule } from 'primeng/avatar';
 import { CalendarModule } from 'primeng/calendar';
 import { AboutUsComponent } from '../../pages/about-us/about-us.component';
 import { ContactUsComponent } from '../../pages/contact-us/contact-us.component';
-import { PanelModule } from 'primeng/panel';
-
-
+import { SignUpComponent } from '../../pages/sign-up/sign-up.component';
+import { PanelModule } from 'primeng/panel'
 
 @NgModule({
   providers: [ConfirmationService],
@@ -37,6 +36,7 @@ import { PanelModule } from 'primeng/panel';
     IndexOfPipe,
     AboutUsComponent,
     ContactUsComponent,
+    SignUpComponent
   ],
   imports: [
     FormsModule,

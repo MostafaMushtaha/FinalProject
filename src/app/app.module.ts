@@ -11,16 +11,18 @@ import { NgOtpInputModule } from 'ng-otp-input';
 import { DropdownModule } from 'primeng/dropdown';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import {RippleModule} from 'primeng/ripple';
-
-
-
-
-
+import { LoginComponent } from './pages/login/login.component';
+import { VideoCallComponent } from './pages/video-call/video-call.component';
+import { Home2Component } from './pages/home2/home2.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    LoginComponent,
+    VideoCallComponent,
+    Home2Component,
+
 
   ],
   imports: [
