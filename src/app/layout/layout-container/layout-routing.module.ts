@@ -8,6 +8,8 @@ import { ContactUsComponent } from 'src/app/pages/contact-us/contact-us.componen
 import { SignUpComponent } from 'src/app/pages/sign-up/sign-up.component';
 import { LoginComponent } from 'src/app/pages/login/login.component';
 import { VideoCallComponent } from 'src/app/pages/video-call/video-call.component';
+import { ForgetPassComponent } from 'src/app/pages/forget-pass/forget-pass.component';
+
 
 const routes: Routes = [
   {
@@ -19,6 +21,7 @@ const routes: Routes = [
       { path: 'sign-up', component: SignUpComponent },
       { path: 'login', component: LoginComponent },
       { path: 'video-call', component: VideoCallComponent },
+      { path: 'forget-password', component: ForgetPassComponent },
       { path: '', redirectTo: 'home', pathMatch: 'full' }
     ],
   }
