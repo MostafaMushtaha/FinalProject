@@ -26,17 +26,26 @@ import { AboutUsComponent } from '../../pages/about-us/about-us.component';
 import { ContactUsComponent } from '../../pages/contact-us/contact-us.component';
 import { SignUpComponent } from '../../pages/sign-up/sign-up.component';
 import { PanelModule } from 'primeng/panel'
+import { ForgetPassComponent } from 'src/app/pages/forget-pass/forget-pass.component';
+import { LoginComponent } from 'src/app/pages/login/login.component';
+import { VideoCallComponent } from 'src/app/pages/video-call/video-call.component';
+import { Home2Component } from 'src/app/pages/home2/home2.component';
 
 @NgModule({
   providers: [ConfirmationService],
-  declarations: [LayoutComponent,
+  declarations: [
+    LayoutComponent,
     HomeComponent,
     FooterComponent,
     NavbarComponent,
     IndexOfPipe,
     AboutUsComponent,
     ContactUsComponent,
-    SignUpComponent
+    SignUpComponent,
+    ForgetPassComponent,
+    LoginComponent,
+    VideoCallComponent,
+    Home2Component,
   ],
   imports: [
     FormsModule,
