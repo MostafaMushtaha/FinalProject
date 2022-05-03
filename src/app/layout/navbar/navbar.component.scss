@@ -4,6 +4,7 @@
   padding-right: 6rem;
   padding-left: 6rem;
   height: 12%;
+  position: relative;
 }
 
 //set1 carries healthcare-health insuarnce about....
@@ -13,7 +14,9 @@
 
 .navbar ul li {
   margin:0 2rem 0 0;
-  // padding: 0 0.5rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  font-size: 1.5rem;
 }
 
 .navbar-collapse {
