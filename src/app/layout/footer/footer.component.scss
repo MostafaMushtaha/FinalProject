@@ -1,0 +1,45 @@
+.container-grid{
+
+    background-color: #205375;
+    color: white;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 15%;
+    gap: 3.5%;
+    padding: 5% 7% 5% 7%;
+    height: 21rem;
+
+}
+.header {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/*.column1{
+}
+.column2{
+}
+.column3{
+}*/
+
+.column4{
+    border-left: 5px solid #fff;
+}
+
+.list{
+    padding-bottom: 2%;
+}
+
+.link{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+.link:hover{
+    font-weight: bold;
+}
+
+.app-img{
+    height: 5%;
+    margin-left: 5%;
+    margin-top: 25%;
+}
