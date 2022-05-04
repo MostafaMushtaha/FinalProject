@@ -5,9 +5,13 @@
   padding-left: 6rem;
 }
 
+.navbar-brand{
+  font-size: 1.6rem;
+}
+
 //set1 carries healthcare-health insuarnce about....
 .set1 {
-  margin-left: 15rem;
+  margin-left: 10rem;
 }
 
 .navbar ul li {
@@ -19,9 +23,18 @@
   justify-content: space-between;
 }
 
+.active {
+  font-weight: bold;
+}
+
 .nav-item {
-  color: #646569;
+  color: #fff;
   font-size: 1.3rem;
+  border-right: solid white 3px;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+  background: linear-gradient(to right, #00396A 50% ,white 50%) left;
+  background-size: 250%;
 
   .pi-search {
     color: #46763a;
@@ -29,6 +42,28 @@
     transform: scaleX(-1);
     -moz-transform: scaleX(-1);
   }
+}
+
+
+.nav-item:hover{
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-position: right;
+}
+
+.nav-item:hover .nav-link{
+  color: blue;
+  transition-delay: 0.25s;
+}
+
+.nav-link {
+  cursor: pointer;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.icon{
+  margin-right: 10px;
 }
 
 .loginButton {
@@ -59,10 +94,6 @@
 
 // }
 
-
-.nav-link {
-  cursor: pointer;
-}
 
 // a,
 // button {
