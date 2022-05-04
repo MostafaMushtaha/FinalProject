@@ -1,7 +1,5 @@
 .center {
   margin: 17rem 50%;
-  top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
   width: 400px;
   background: white;
@@ -19,13 +17,6 @@
   padding: 0 40px;
   padding-bottom: 2px;
   box-sizing: border-box;
-}
-
-.userType {
-  width: 30%;
-  height: 60%;
-  margin-left: 8.5rem;
-
 }
 
 form .txt_field {
