@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { langHelper } from 'src/app/services/helpers-and-utilities/language-helper';
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -10,9 +11,11 @@ import { langHelper } from 'src/app/services/helpers-and-utilities/language-help
 export class HomeComponent implements OnInit {
 
   langVar;
-  constructor(public langHelper: langHelper, private router: Router) { }
+  constructor(public langHelper: langHelper, private router: Router) { 
+  }
 
   ngOnInit(): void {
+    
 
   }
 

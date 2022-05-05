@@ -1,0 +1,160 @@
+/*Search block first block*/
+.search-block {
+  height: 40rem;
+}
+
+/*Main div (Search box)*/
+.search-div {
+  height: 17rem;
+  width: 70%;
+  margin: auto;
+
+  background-color: White;
+  border: 2px solid white;
+  border-radius: 20px;
+  box-shadow: rgb(0 0 0 / 29%) 0px 6px 18px 0px;
+
+  display: block;
+  ;
+}
+
+.search-block-h2 {
+  padding: 5% 0 0 9%;
+}
+
+.search-block-h4 {
+  padding: 0 0 5% 9%;
+  color: grey;
+}
+
+
+/*Inside search div*/
+.first-div {
+  position: relative;
+}
+
+.search-h4 {
+  padding: 2% 0 2% 0;
+  text-align: center;
+}
+
+.second-div {
+  position: relative;
+}
+
+.search-selection {
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+.checkbox-selection {
+  text-align: center;
+  margin-bottom: 1%;
+}
+
+.gender-selection,
+.profession-selection {
+  display: inline-block;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.specialty,
+.city,
+.area {
+  width: 15%;
+  margin-left: 2%;
+  margin-right: 2%;
+  border-radius: 20px;
+  text-align: center;
+  display: inline-block;
+  box-shadow: none;
+}
+
+.city {
+  width: 15%;
+  border-radius: 20px;
+  text-align: center;
+  display: inline-block;
+  box-shadow: none;
+}
+
+.specialty:focus,
+.city:focus,
+.area:focus {
+  transition: border-color 0.6s ease;
+  border-color: green;
+}
+
+.gender,
+.profession {
+  display: inline-block;
+  font-size: 1.3rem;
+  box-shadow: none;
+  margin-right: 1rem;
+}
+
+.male,
+.male-label,
+.female,
+.female-label,
+.doctor,
+.doctor-label,
+.nurse,
+.nurse-label {
+  box-shadow: none;
+  border-color: #d6d4d4;
+}
+
+
+.male:checked,
+.female:checked,
+.doctor:checked,
+.nurse:checked {
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.6s;
+  background-color: green;
+  border-color: green;
+}
+
+.third-div {
+  position: relative;
+}
+
+.search {
+  position: relative;
+  width: 80%;
+  margin: auto;
+}
+
+.search input {
+  height: 40px;
+  border: 1px solid #d6d4d4;
+  text-indent: 35px;
+  border-radius: 20px;
+  box-shadow: none;
+  overflow: hidden;
+}
+
+.search input:focus {
+  transition: border-color 1s ease;
+  border-color: green;
+}
+
+.search .pi-search {
+  position: absolute;
+  top: 12px;
+  left: 15px;
+}
+
+.search button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 40px;
+  width: 20%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: none;
+  background-color: green;
+}
