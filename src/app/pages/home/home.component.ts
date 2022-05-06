@@ -8,6 +8,7 @@ import { langHelper } from 'src/app/services/helpers-and-utilities/language-help
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
+
 export class HomeComponent implements OnInit {
 
   langVar;

@@ -13,11 +13,11 @@
   <h4 class="search-block-h4">Book Doctors & Nurses Online</h4>
 
   <div class="search-div">
-    <div class="first-div">
-      <h4 class="search-h4">Book an Appointment all over Egypt</h4>
-
+    <div class="first-div-search">
+      <h4 class="search-h4">Book Appointments all over Egypt</h4>
     </div>
-    <div class="second-div">
+
+    <div class="second-div-search">
       <div class="search-selection">
         <select class="form-select specialty" aria-label="">
           <option class="select-option" selected>All Specialties</option>
@@ -40,6 +40,18 @@
       </div>
 
       <div class="checkbox-selection">
+        <div class="profession-selection">
+          <p class="profession">Profession </p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input doctor" type="checkbox" id="inlineCheckbox3" value="option3">
+            <label class="form-check-label doctor-label" for="inlineCheckbox3">Doctor</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input nurse" type="checkbox" id="inlineCheckbox4" value="option4">
+            <label class="form-check-label nurse-label" for="inlineCheckbox4">Nurse</label>
+          </div>
+        </div>
+
         <div class="gender-selection">
           <p class="gender">Gender</p>
           <div class="form-check form-check-inline">
@@ -52,20 +64,23 @@
           </div>
         </div>
 
-        <div class="profession-selection">
-          <p class="profession">Profession </p>
+
+
+        <div class="visit-selection">
+          <p class="visit">Visit Type</p>
           <div class="form-check form-check-inline">
-            <input class="form-check-input doctor" type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label doctor-label" for="inlineCheckbox1">Doctor</label>
+            <input class="form-check-input clinic-visit" type="checkbox" id="inlineCheckbox5" value="option5">
+            <label class="form-check-label clinic-visit-label" for="inlineCheckbox5">Clinic-Visit</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input nurse" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label nurse-label" for="inlineCheckbox2">Nurse</label>
+            <input class="form-check-input home-visit" type="checkbox" id="inlineCheckbox6" value="option6">
+            <label class="form-check-label home-visit-label" for="inlineCheckbox6">Home-Visit</label>
           </div>
         </div>
+
       </div>
     </div>
-    <div class="third-div">
+    <div class="third-div-search">
       <div class="search">
         <i class="pi pi-search"></i>
         <input type="text" class="form-control" placeholder="Search by Name...">
@@ -76,7 +91,117 @@
 </div>
 
 <!-- Our services div -->
-<div class=""></div>
+<div class="our-services-block">
+  <div class="first-div-services">
+    <h2 class="">Our Services</h2>
+  </div>
+
+  <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="false">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active service-set-box">
+        <div class="service-box">
+          <div class="service-img"><img src="" alt="Img"></div>
+          <div class="service-info">
+            <h4>Services 1</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis,
+              sapien dui mattis dui, non pulvinar lorem felis nec erat</p>
+          </div>
+        </div>
+        <div class="service-box">
+          <div class="service-img"><img src="" alt="Img"></div>
+          <div class="service-info">
+            <h4>Services 1</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis,
+              sapien dui mattis dui, non pulvinar lorem felis nec erat</p>
+          </div>
+        </div>
+        <div class="service-box">
+          <div class="service-img"><img src="" alt="Img"></div>
+          <div class="service-info">
+            <h4>Services 1</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis,
+              sapien dui mattis dui, non pulvinar lorem felis nec erat</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item service-set-box">
+        <div class="service-box">
+          <div class="service-img"><img src="" alt="Img"></div>
+          <div class="service-info">
+            <h4>Services 2</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis,
+              sapien dui mattis dui, non pulvinar lorem felis nec erat</p>
+          </div>
+        </div>
+        <div class="service-box">
+          <div class="service-img"><img src="" alt="Img"></div>
+          <div class="service-info">
+            <h4>Services 2</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis,
+              sapien dui mattis dui, non pulvinar lorem felis nec erat</p>
+          </div>
+        </div>
+        <div class="service-box">
+          <div class="service-img"><img src="" alt="Img"></div>
+          <div class="service-info">
+            <h4>Services 2</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis,
+              sapien dui mattis dui, non pulvinar lorem felis nec erat</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item service-set-box">
+        <div class="service-box">
+          <div class="service-img"><img src="" alt="Img"></div>
+          <div class="service-info">
+            <h4>Services 3</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis,
+              sapien dui mattis dui, non pulvinar lorem felis nec erat</p>
+          </div>
+        </div>
+        <div class="service-box">
+          <div class="service-img"><img src="" alt="Img"></div>
+          <div class="service-info">
+            <h4>Services 3</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis,
+              sapien dui mattis dui, non pulvinar lorem felis nec erat</p>
+          </div>
+        </div>
+        <div class="service-box">
+          <div class="service-img"><img src="" alt="Img"></div>
+          <div class="service-info">
+            <h4>Services 3</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis,
+              sapien dui mattis dui, non pulvinar lorem felis nec erat</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+</div>
 
 <!-- Paragraphs on docs and nurses div -->
 <div class=""></div>
