@@ -1,11 +1,11 @@
 .navbar {
-  background-color: #00396A;
+  background-color: #306a95;
   margin: 0rem;
   padding-right: 6rem;
   padding-left: 6rem;
 }
 
-.navbar-brand{
+.navbar-brand {
   font-size: 1.6rem;
   font-weight: bold;
 }
@@ -34,7 +34,8 @@
   border-right: 4px solid white;
   transition-duration: 0.5s;
   transition-timing-function: linear;
-  background: linear-gradient(to right, #00396A 50% ,white 50%) left;
+
+  background: linear-gradient(to right, #306a95 50%, white 50%) left;
   background-size: 250%;
 
   .pi-search {
@@ -46,13 +47,13 @@
 }
 
 
-.nav-item:hover{
+.nav-item:hover {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   background-position: right;
 }
 
-.nav-item:hover .nav-link{
+.nav-item:hover .nav-link {
   color: blue;
   transition-delay: 0.25s;
 }
@@ -64,7 +65,7 @@
 }
 
 
-.icon{
+.icon {
   margin-right: 10px;
 }
 
