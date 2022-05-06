@@ -30,6 +30,9 @@ import { ForgetPassComponent } from 'src/app/pages/forget-pass/forget-pass.compo
 import { LoginComponent } from 'src/app/pages/login/login.component';
 import { VideoCallComponent } from 'src/app/pages/video-call/video-call.component';
 import { Home2Component } from 'src/app/pages/home2/home2.component';
+import { PatientSignUpComponent } from 'src/app/pages/patient-sign-up/patient-sign-up.component';
+import { NurseSignUpComponent } from 'src/app/pages/nurse-sign-up/nurse-sign-up.component';
+import { DoctorSignUpOneComponent } from 'src/app/pages/doctor-sign-up-one/doctor-sign-up-one.component';
 
 @NgModule({
   providers: [ConfirmationService],
@@ -46,6 +49,9 @@ import { Home2Component } from 'src/app/pages/home2/home2.component';
     LoginComponent,
     VideoCallComponent,
     Home2Component,
+    PatientSignUpComponent,
+    NurseSignUpComponent,
+    DoctorSignUpOneComponent,
   ],
   imports: [
     FormsModule,
