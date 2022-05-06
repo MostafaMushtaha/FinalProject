@@ -58,10 +58,13 @@
   transition-delay: 0.25s;
 }
 
-.nav-link {
-  cursor: pointer;
+a.nav-link {
   margin-right: 10px;
   margin-left: 10px;
+}
+
+.navbar-nav .nav-link  {
+  color: white;
 }
 
 .icon {
