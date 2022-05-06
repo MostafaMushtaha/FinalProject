@@ -7,6 +7,7 @@
 
 .navbar-brand{
   font-size: 1.6rem;
+  font-weight: bold;
 }
 
 //set1 carries healthcare-health insuarnce about....
@@ -30,7 +31,7 @@
 .nav-item {
   color: #fff;
   font-size: 1.3rem;
-  border-right: solid white 3px;
+  border-right: 4px solid white;
   transition-duration: 0.5s;
   transition-timing-function: linear;
   background: linear-gradient(to right, #00396A 50% ,white 50%) left;
