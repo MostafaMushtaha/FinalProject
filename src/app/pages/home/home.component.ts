@@ -11,6 +11,10 @@ import { langHelper } from 'src/app/services/helpers-and-utilities/language-help
 
 export class HomeComponent implements OnInit {
 
+
+
+
+  
   langVar;
   constructor(public langHelper: langHelper, private router: Router) { 
   }
