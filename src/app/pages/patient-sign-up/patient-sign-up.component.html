@@ -1,20 +1,48 @@
-<div class="container">
-    <div class="col logo">
-        <img src="" alt="patientLogo">
-        <input type="btn" value="Register Now">
-    </div>
-    <div class="col info">
-        <div class="row header">
-            <h1 class="headerTxt">Information</h1>
-            <div class="row userInfo">
-                <input type="text" class="firstName">
-                <input type="text" class="secondName">
-                <input type="calender" class="birthDate">
-                <input type="radio" class="maleGender">
-                <input type="radio" class="femaleGender">
-                <input type="email" class="email">
-                <input type="" class="countryCode">
-            </div>
+<div class="container PSContainer justify-content-center">
+  <div class="center d-flex ">
+    <!-- <div class="col logo justify-content-center gap">
+      <img src="" alt="patientLogo">
+      <input type="button" value="Register Now">
+    </div> -->
+    <div class="col info justify-content-center">
+      <div class="row header ">
+        <h1 class="headerTxt ">Information</h1>
+      </div>
+      <div class="row userInfo">
+        <div class="txt_field" name="userFirstName">
+          <input type="text" required>
+          <span></span>
+          <label>First Name</label>
         </div>
+        <div class="txt_field userLastName" name="userLastName">
+          <input type="text" required>
+          <span></span>
+          <label>Last Name</label>
+        </div>
+        <div class="txt_field userEmail" name="userEmail">
+          <input type="email" required>
+          <span></span>
+          <label>Email</label>
+        </div>
+        <div class="birthDate field col-12 md:col-4">
+          <label for="basic" class="birthDateTxt">Birth Date</label>
+          <p-calendar inputId="basic" [(ngModel)]="date1"></p-calendar>
+        </div>
+        <div class="gender d-flex">
+          <div class="field-radiobutton">
+            <p-radioButton name="city" value="Chicago" [(ngModel)]="city" inputId="city1"></p-radioButton>
+            <label for="city1">Male</label>
+          </div>
+          <div class="field-radiobutton">
+            <p-radioButton name="city" value="Los Angeles" [(ngModel)]="city" inputId="city2"></p-radioButton>
+            <label for="city2">Female</label>
+          </div>
+        </div>
+        <div class="password">
+          <h5>Show Password</h5>
+          <p-password [(ngModel)]="value3" [toggleMask]="true"></p-password>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
