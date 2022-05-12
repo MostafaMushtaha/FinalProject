@@ -33,6 +33,8 @@ import { Home2Component } from 'src/app/pages/home2/home2.component';
 import { PatientSignUpComponent } from 'src/app/pages/patient-sign-up/patient-sign-up.component';
 import { NurseSignUpComponent } from 'src/app/pages/nurse-sign-up/nurse-sign-up.component';
 import { DoctorSignUpOneComponent } from 'src/app/pages/doctor-sign-up-one/doctor-sign-up-one.component';
+import {RadioButtonModule} from 'primeng/radiobutton'
+
 
 @NgModule({
   providers: [ConfirmationService],
@@ -67,6 +69,7 @@ import { DoctorSignUpOneComponent } from 'src/app/pages/doctor-sign-up-one/docto
     CarouselModule,
     PasswordModule,
     CalendarModule,
+    RadioButtonModule,
     CarouselModule,
     DropdownModule,
     NgOtpInputModule,

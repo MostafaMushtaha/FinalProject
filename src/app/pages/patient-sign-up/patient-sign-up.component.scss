@@ -1,0 +1,95 @@
+.PSContainer {
+  display: flex;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.center {
+  width: 50%;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+}
+
+.info {
+  padding: 3% 5%;
+}
+
+.header h1 {
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid silver;
+}
+
+.txt_field {
+  position: relative;
+  width: 40%;
+  border-bottom: 2px solid #adadad;
+  margin: 2%;
+}
+
+.txt_field input {
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.txt_field label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.txt_field input:focus~label,
+.txt_field input:valid~label {
+  top: -5px;
+  color: #2691d9;
+}
+
+.txt_field input:focus~span::before,
+.txt_field input:valid~span::before {
+  width: 100%;
+}
+
+.userLastName {
+  margin-left: 10%;
+}
+
+.userEmail {
+  width: 92%;
+}
+
+.birthDateTxt {
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  margin-right: 2%;
+  font-size: 16px;
+}
+
+.col-12 {
+  flex: 0 0 auto;
+  margin-top: 1.5%;
+  width: 50%;
+}
+.gender {
+  width: 45%;
+  margin-left: 2rem;;
+}
+
+.field-radiobutton {
+  margin-right: 1rem;
+  padding-top: 1rem;
+}
+.password{
+    width: 100%;
+}

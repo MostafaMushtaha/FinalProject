@@ -1,24 +1,20 @@
-.loginContainer {
-  height: 50rem;
-  margin-bottom: 10rem;
-  margin: 0;
+.loginContainer {         
   background: no-repeat;
   background-size: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  // background-image: url(https://i.imgur.com/PP4e9I4.jpg);
 }
 
 .center {
-  margin: 17rem 50%;
-  display: block;
-  // padding-top: 7rem;
-  transform: translate(-50%, -50%);
-  width: 400px;
+  width: 35%;
   background: white;
   border-radius: 10px;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
 }
 
 .center h1 {
-  text-align: center;
+  text-align: center;   
   padding: 20px 0;
   border-bottom: 1px solid silver;
 }
