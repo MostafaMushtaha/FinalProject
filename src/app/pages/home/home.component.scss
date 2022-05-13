@@ -1,7 +1,52 @@
+.navigate-to-insurance-div {
+  width: 350px;
+  height: 60px;
+
+  position: fixed;
+  right: 13px;
+  top: 200px;
+  
+  transform: rotate(270deg);
+  transform-origin: right;
+  
+  text-align: center;
+  background-color: white;
+  
+  border: 1px grey solid;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  z-index: 9;
+}
+
+.health-insurance-anchor {
+  color:dimgray;
+
+  position: absolute;
+  left: 90px;
+  top: 5px;
+
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.navigate-arrow {
+  position: absolute;
+  top: -25px;
+
+  font-size: 30px;
+  color: red;
+  background-color: white;
+  border-radius: 20px;
+  transform: rotate(90deg);
+}
+
+
 /*************************Search block first block*************************/
 .search-block {
   height: 40rem;
-  background-image: url(https://i.imgur.com/apXBFTC.jpg);
+  background-image: url(https://i.imgur.com/BHTa55w.jpg);
+  background-size: cover;
+  
 }
 
 /*Main div (Search box)*/
@@ -159,6 +204,7 @@
 
 .search .pi-search {
   position: absolute;
+  color: grey;
   top: 12px;
   left: 15px;
 }
@@ -217,7 +263,7 @@
 
 .top-profession-block {
   background-color: white;
-  height: 40rem;
+  height: auto;
 }
 
 
@@ -233,7 +279,7 @@
 
 .achievements-block {
   height: auto;
-  background-color: cadetblue;
+  background-color: #85C88A;
   text-align: center;
 }
 
@@ -275,28 +321,84 @@
 }
 
 .contact-us-icon:hover {
-  color: cyan;
+  color: #205375;
 }
 
 /*****************************************************************/
 /*************************Get plan block seventh block*************************/
 .get-plan-block {
-  background-color: white;
-
+  height: auto;
 }
 
 .get-plan-div {
+  position: relative;
   width: 60%;
   box-shadow: rgb(0 0 0 / 29%) 0px 6px 18px 0px;
-  background-color: darkgrey;
-  margin:  5% auto;
-  border: 1px solid darkgrey;
+  background-color: #EEEEEE;
+  margin: 5% auto 3%;
+  border: 1px solid #EEEEEE;
   border-radius: 15px;
 }
-.get-plan-p {}
 
-.get-plan-btn {}
+.get-plan-p {
+  margin: 3% 5% 5% 5%;
+  font-size: 1.3rem;
+}
+
+.get-plan-btn-div {
+  position: absolute;
+  right: 10%;
+  bottom: 25%;
+}
+
+.get-plan-btn {
+  border-radius: 15px;
+  padding: 12px 30px;
+  size: 10%;
+}
 
 
 /*****************************************************************/
 /*************************social media block eightith block*************************/
+.social-media-block {
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+.social-media-set {
+  margin: 3% 0;
+}
+
+.social-media {
+  font-size: 25px;
+  padding: 0 15px;
+}
+
+.facebook {
+  color: #1195f5;
+}
+
+.twitter {
+  color: #50abf1;
+}
+
+.instagram {
+  text-align: center;
+  background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+.whatsapp {
+  color: #0dc143;
+}
+
+.social-media-line {
+  border: 0;
+  height: 5px;
+  margin: 5px;
+  flex: 1;
+  z-index: 1;
+}
