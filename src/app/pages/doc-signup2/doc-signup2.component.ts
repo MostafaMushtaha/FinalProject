@@ -1,14 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-patient2',
-  templateUrl: './patient2.component.html',
-  styleUrls: ['./patient2.component.scss']
+  selector: 'app-doc-signup2',
+  templateUrl: './doc-signup2.component.html',
+  styleUrls: ['./doc-signup2.component.scss']
 })
-export class Patient2Component implements OnInit {
+export class DocSignup2Component implements OnInit {
 
   constructor() { }
-
   selectedCity: string;
   selectedPlan: string;
 
@@ -62,7 +61,6 @@ export class Patient2Component implements OnInit {
     { name: 'Golden Plus'},    
     { name: 'None'},    
   ];
-
   ngOnInit(): void {
   }
 
