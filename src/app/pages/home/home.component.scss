@@ -1,3 +1,5 @@
+
+/*************************Navigate to insurance page*************************/
 .navigate-to-insurance-div {
   width: 350px;
   height: 60px;
@@ -46,6 +48,24 @@
   border-radius: 50%;
 }
 
+
+
+/*************************Navigate to top of the page btn*************************/
+
+
+.to-top-icon {
+
+  position: fixed;
+  right: 35px;
+  bottom: 35px;
+  background-color: white;
+  color: grey;
+  border: 2px solid grey;
+  border-radius: 50%;
+  font-size: 35px;
+  z-index: 9;
+  scroll-behavior: smooth;
+}
 
 /*************************Search block first block*************************/
 .search-block {
@@ -331,6 +351,7 @@
   font-size: 1.1rem;
   margin-top: 5%;
 }
+
 .top-profession-exp {
   font-size: 1rem;
   background-color: white;
@@ -347,13 +368,15 @@
   border-bottom: 1px solid grey;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  
+
 }
 
-.pi-star, .pi-star-fill {
+.pi-star,
+.pi-star-fill {
   font-size: 1.3rem;
   color: black;
 }
+
 .pi-star-fill {
   color: orange;
 }
