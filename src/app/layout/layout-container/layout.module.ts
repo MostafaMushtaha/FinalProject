@@ -34,6 +34,8 @@ import { PatientSignUpComponent } from 'src/app/pages/patient-sign-up/patient-si
 import { NurseSignUpComponent } from 'src/app/pages/nurse-sign-up/nurse-sign-up.component';
 import { DoctorSignUpOneComponent } from 'src/app/pages/doctor-sign-up-one/doctor-sign-up-one.component';
 import {RadioButtonModule} from 'primeng/radiobutton'
+import { Patient2Component } from 'src/app/pages/patient2/patient2.component';
+
 
 
 @NgModule({
@@ -54,6 +56,7 @@ import {RadioButtonModule} from 'primeng/radiobutton'
     PatientSignUpComponent,
     NurseSignUpComponent,
     DoctorSignUpOneComponent,
+    Patient2Component,
   ],
   imports: [
     FormsModule,

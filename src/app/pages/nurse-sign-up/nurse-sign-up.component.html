@@ -1,1 +1,60 @@
-<p>nurse-sign-up works!</p>
+<div class="container PSContainer justify-content-center">
+    <div class="center d-flex ">
+      <div class="col leftSide justify-content-center gap">
+        <img src="https://i.imgur.com/BdxPAhS.png" alt="patientLogo" class="row">
+        <button pButton pRipple type="button" label="Next" class="p-button-raised p-button-success"></button>
+      </div>
+      <div class="col info justify-content-center">
+        <div class="row header ">
+          <h1 class="headerTxt ">Information</h1>
+        </div>
+        <div class="row userInfo">
+          <div class="txt_field" name="userFirstName">
+            <input type="text" required>
+            <span></span>
+            <label>First Name</label>
+          </div>
+          <div class="txt_field userLastName" name="userLastName">
+            <input type="text" required>
+            <span></span>
+            <label>Last Name</label>
+          </div>
+          <div class="birthDate field col-12 md:col-4">
+            <label for="basic" class="DataTxt calenderTxt">Birth Date</label><br>
+            <p-calendar inputId="basic" [(ngModel)]="date1"></p-calendar>
+          </div>
+          <div class="gender d-flex">
+            <div class="field-radiobutton">
+              <p-radioButton name="city" class="gTxt" value="male" [(ngModel)]="city" inputId="male"></p-radioButton>
+              <label for="male"><img src="https://i.imgur.com/7alkg7M.png" alt="male" class="genderImg"> Male</label>
+            </div>
+            <div class="field-radiobutton female">
+              <p-radioButton name="city" class="gTxt" value="female" [(ngModel)]="city" inputId="female"></p-radioButton>
+              <label for="female"><img src="https://i.imgur.com/31PD7OW.png" alt="female" class="genderImg"> Female</label>
+            </div>
+          </div>
+          <div class="txt_field" name="userNumber">
+            <input type="text" required>
+            <span></span>
+            <label>Phone Number</label>
+          </div>
+          <div class="txt_field" name="userNumber">
+            <input type="text" required>
+            <span></span>
+            <label>Second Number</label>
+          </div>
+          <div class="txt_field userEmail" name="userEmail">
+            <input type="email" required>
+            <span></span>
+            <label>Email</label>
+          </div>
+          <div class="password DataTxt">
+            <h5 class="passTxt">Show Password</h5>
+            <p-password [(ngModel)]="value" [toggleMask]="true"></p-password>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </div>
+  

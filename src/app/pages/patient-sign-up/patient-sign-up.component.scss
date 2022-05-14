@@ -5,14 +5,31 @@
 }
 
 .center {
-  width: 50%;
+  width: 75%;
   background: white;
   border-radius: 10px;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
 }
 
+.leftSide img {
+  width: 15rem;
+  height: 15rem;
+  margin-top: 2rem;
+  margin-left: 1.8rem;
+}
+
+.leftSide button {
+  margin-top: 6rem;
+  margin-left: 3.5rem;
+  width: 12rem;
+  text-align: center;
+  border-radius: 15px;
+}
+
 .info {
   padding: 3% 5%;
+  flex: 2;
+  border-left: 1px solid silver;
 }
 
 .header h1 {
@@ -61,14 +78,14 @@
 }
 
 .userLastName {
-  margin-left: 10%;
+  margin-left: 2%;
 }
 
 .userEmail {
-  width: 92%;
+  width: 50%;
 }
 
-.birthDateTxt {
+.DataTxt {
   top: 50%;
   left: 5px;
   color: #adadad;
@@ -76,20 +93,55 @@
   font-size: 16px;
 }
 
+
+
 .col-12 {
   flex: 0 0 auto;
   margin-top: 1.5%;
   width: 50%;
 }
+
 .gender {
-  width: 45%;
-  margin-left: 2rem;;
+  width: 50%;
+}
+
+.genderImg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.gTxt {
+  padding-right: 0.5rem;
+}
+
+.genderTxt{
+  align-items: center;
+  width: 100%;
+  color: #adadad;
+  padding-right: 0;
+  font-size: 16px;
 }
 
 .field-radiobutton {
   margin-right: 1rem;
   padding-top: 1rem;
 }
-.password{
-    width: 100%;
+
+.calenderTxt {
+  padding-bottom: 0.8rem;
+}
+
+.password {
+  width: 30%;
+}
+
+.passTxt {
+  font-size: 1rem;
+  color: #adadad;
+  padding-top: 0.7rem;
+  padding-bottom: 0.3rem;
+}
+
+p.inputtext {
+  padding: 0.5rem 1.5rem;
 }
