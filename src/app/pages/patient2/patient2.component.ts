@@ -15,7 +15,7 @@ export class Patient2Component implements OnInit {
   cities = [
     { name: 'Cairo'},
     { name: 'Alexandria'},
-    { name: 'Gizeh'},
+    { name: 'Gizah'},
     { name: 'Shubra El-Kheima'},
     { name: 'Port Said'},
     { name: 'Suez'},
