@@ -9,19 +9,16 @@ import { langHelper } from 'src/app/services/helpers-and-utilities/language-help
   styleUrls: ['./home.component.scss']
 })
 
+
+
 export class HomeComponent implements OnInit {
-
-
-
 
   
   langVar;
   constructor(public langHelper: langHelper, private router: Router) { 
+    
   }
 
   ngOnInit(): void {
-    
-
-  }
-
+}
 }
