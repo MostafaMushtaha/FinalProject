@@ -1,1 +1,59 @@
-<p>patient2 works!</p>
+<div class="container justify-content-center center d-flex">
+  <div class="col leftSide">
+    <img src="https://i.imgur.com/fd1uj0T.png" alt="patientLogo" class="row">
+    <button pButton pRipple type="button" label="Next" class="p-button-raised p-button-success"></button>
+  </div>
+  <div class="col rightSide info">
+    <div class="row header">
+      <h1 class="headerTxt ">Information</h1>
+    </div>
+    <div class="row addressDetails">
+      <div class="txt_field streetName" name="streetName">
+        <input type="text" required>
+        <span></span>
+        <label>StreetName</label>
+      </div>
+      <div class="txt_field streetName" name="streetName">
+        <input type="text" required>
+        <span></span>
+        <label>StreetName 2 <span class="optStr">(N/A If not available)</span></label>
+      </div>
+      <div class="txt_field" name="city">
+        <input type="text" required>
+        <span></span>
+        <label>City</label>
+      </div>
+      <div class="txt_field" name="state">
+        <input type="text" required>
+        <span></span>
+        <label>State / Province</label>
+      </div>
+      <div class="txt_field" name="state">
+        <input type="number" required>
+        <span></span>
+        <label>Postal Code</label>
+      </div>
+      <div class="city DDMenu">
+        <h5>City</h5>
+        <p-dropdown [options]="cities" [(ngModel)]="selectedCity" placeholder="Select a City" optionLabel="name"
+          [showClear]="true"></p-dropdown>
+      </div>
+      <div class="insurancePlans DDMenu">
+        <h5>Insurance Plans</h5>
+        <p-dropdown [options]="plans" [(ngModel)]="selectedPlan" placeholder="Select a Plan" optionLabel="name"
+          [showClear]="true"></p-dropdown>
+      </div>
+      <div class="Togglecontainer d-flex">
+        <div class="switchData">
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+          </label>
+        </div>
+        <div class="switchText">
+          <p>I accept Terms & Conditions</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
