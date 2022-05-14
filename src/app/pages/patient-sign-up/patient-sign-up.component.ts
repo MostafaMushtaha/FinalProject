@@ -14,6 +14,8 @@ export class PatientSignUpComponent implements OnInit {
   date1: Date;
   invalidDates: Array<Date>
 
+  value: string;
+
   city: string;
 
   constructor() { }

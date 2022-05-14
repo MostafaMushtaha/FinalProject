@@ -18,6 +18,7 @@ import {RippleModule} from 'primeng/ripple';
   declarations: [
     AppComponent,
     
+    
   ],
   imports: [
     BrowserModule,

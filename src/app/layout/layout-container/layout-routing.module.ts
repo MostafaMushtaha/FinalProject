@@ -12,6 +12,8 @@ import { ForgetPassComponent } from 'src/app/pages/forget-pass/forget-pass.compo
 import { PatientSignUpComponent } from 'src/app/pages/patient-sign-up/patient-sign-up.component';
 import { NurseSignUpComponent } from 'src/app/pages/nurse-sign-up/nurse-sign-up.component';
 import { DoctorSignUpOneComponent } from 'src/app/pages/doctor-sign-up-one/doctor-sign-up-one.component';
+import { Patient2Component } from 'src/app/pages/patient2/patient2.component';
+
 
 
 const routes: Routes = [
@@ -25,9 +27,10 @@ const routes: Routes = [
       { path: 'login', component: LoginComponent },
       { path: 'video-call', component: VideoCallComponent },
       { path: 'forget-password', component: ForgetPassComponent },
-      { path: 'patient-signup', component: PatientSignUpComponent },
+      { path: 'patient-signup-phase-1', component: PatientSignUpComponent },
       { path: 'nurse-signup', component: NurseSignUpComponent },
       { path: 'doctor-signup-phase-1', component: DoctorSignUpOneComponent },
+      { path: 'patient-signup-phase-2', component: Patient2Component },
       { path: '', redirectTo: 'home', pathMatch: 'full' }
     ],
   }
