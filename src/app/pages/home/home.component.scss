@@ -18,6 +18,12 @@
   z-index: 9;
 }
 
+.navigate-to-insurance-div:hover {
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  box-shadow: rgb(0 0 0 / 30%) 0px 6px 18px 0px;
+}
+
 .health-insurance-anchor {
   color:dimgray;
 
@@ -225,7 +231,7 @@
 /*************************Our services block second block*************************/
 
 .our-services-block {
-  background-color: cornflowerblue;
+  background: radial-gradient(#82DBD8, cornflowerblue);
   height: auto;
 }
 
@@ -271,7 +277,46 @@
 /*****************************************************************/
 /*************************FAQs block fourth block*************************/
 
+.faqs-block {
+  height: auto;
+  text-align: center;
+}
 
+.faqs-div {
+  padding: 0 25% 3%;
+}
+
+.faqs-h2 {
+  padding: 3% 0 0.5%;
+}
+
+.faqs-p{
+  padding-bottom: 2%;
+  font-size: 1.2rem;
+}
+
+.carousel-indicators {
+  margin: 0;
+}
+
+.faqs-text, .faqs-text:focus {
+  color: #000;
+  text-decoration: none;
+  box-shadow: 0 0 0 0.2rem rgb(247 247 247);
+}
+
+.faqs-text:hover {
+  color: #000;
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+.view-more-btn {
+  padding: 1% 2%;
+  font-size: 1rem;
+  border-radius: 20px;
+  margin-bottom: 3%;
+}
 
 
 /*****************************************************************/
@@ -334,7 +379,10 @@
   position: relative;
   width: 60%;
   box-shadow: rgb(0 0 0 / 29%) 0px 6px 18px 0px;
-  background-color: #EEEEEE;
+  background: linear-gradient(to right, #EEEEEE, white 400px, #EEEEEE 800px);
+  background-size: 800px 100%;
+  background-position: 0 100%;
+
   margin: 5% auto 3%;
   border: 1px solid #EEEEEE;
   border-radius: 15px;
