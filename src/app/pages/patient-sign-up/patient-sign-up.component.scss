@@ -82,7 +82,7 @@
 }
 
 .userEmail {
-  width: 50%;
+  width: 40%;
 }
 
 .DataTxt {
@@ -102,7 +102,8 @@
 }
 
 .gender {
-  width: 50%;
+  width: 55%;
+  align-items: center
 }
 
 .genderImg {
@@ -114,21 +115,35 @@
   padding-right: 0.5rem;
 }
 
-.genderTxt{
+.genderTxt {
   align-items: center;
-  width: 100%;
+  width: 24%;
   color: #adadad;
-  padding-right: 0;
+  padding-right: 21px;
+  padding-top: 1rem;
   font-size: 16px;
 }
 
-.field-radiobutton {
+.femaleBtn {
+  flex: 1;
+}
+
+.maleBtn {
+  flex: 1;
   margin-right: 1rem;
+}
+
+.field-radiobutton {
+  margin-right: 0.5rem;
   padding-top: 1rem;
 }
 
 .calenderTxt {
   padding-bottom: 0.8rem;
+}
+
+.col-12 {
+  width: 45%;
 }
 
 .password {

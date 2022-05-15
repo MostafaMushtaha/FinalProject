@@ -2,7 +2,7 @@
   <div class="center d-flex ">
     <div class="col leftSide justify-content-center gap">
       <img src="https://i.imgur.com/fd1uj0T.png" alt="patientLogo" class="row">
-      <button pButton pRipple type="button" label="Next" class="p-button-raised p-button-success"></button>
+     <button pButton pRipple type="button" label="Next" class="p-button-raised p-button-success" ></button>
     </div>
     <div class="col info justify-content-center">
       <div class="row header ">
@@ -24,24 +24,24 @@
           <p-calendar inputId="basic" [(ngModel)]="date1"></p-calendar>
         </div>
         <div class="gender d-flex">
-          <label class="genderTxt row">Gender</label>
-          <div class="field-radiobutton row">
-            <p-radioButton name="city" class="gTxt" value="male" [(ngModel)]="city" inputId="male"></p-radioButton>
+          <label class="genderTxt">Gender</label>
+          <div class="field-radiobutton maleBtn">
+            <p-radioButton class="gTxt" value="male" [(ngModel)]="city" inputId="male"></p-radioButton>
             <label for="male"><img src="https://i.imgur.com/7alkg7M.png" alt="male" class="genderImg"> Male</label>
           </div>
-          <div class="field-radiobutton female">
-            <p-radioButton name="city" class="gTxt" value="female" [(ngModel)]="city" inputId="female"></p-radioButton>
+          <div class="field-radiobutton femaleBtn">
+            <p-radioButton class="gTxt" value="female" [(ngModel)]="city" inputId="female"></p-radioButton>
             <label for="female"><img src="https://i.imgur.com/31PD7OW.png" alt="female" class="genderImg">
               Female</label>
           </div>
         </div>
         <div class="txt_field" name="userNumber">
-          <input type="text" required>
+          <input type="number" required>
           <span></span>
           <label>Phone Number</label>
         </div>
         <div class="txt_field" name="userNumber">
-          <input type="text" required>
+          <input type="number" required>
           <span></span>
           <label>Second Number</label>
         </div>
