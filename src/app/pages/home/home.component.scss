@@ -305,6 +305,34 @@
   border-bottom-right-radius: 25px;
 }
 
+.top-profession-card {
+  border: none;
+}
+
+:host ::ng-deep .p-tabview-nav {
+  justify-content: center;
+}
+
+:host ::ng-deep .p-tabview .p-tabview-panels {
+  padding: 0;
+}
+
+:host ::ng-deep .p-tabview .p-tabview-nav {
+  background-color: #D3E4CD;
+  border-color: #D3E4CD;
+}
+
+:host ::ng-deep .p-tabview .p-tabview-nav li .p-tabview-nav-link {
+  font-size: 1.5rem;
+  border-width: 0 0 3px 0;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+:host ::ng-deep .p-tabview .p-tabview-nav li .p-tabview-nav-link:focus {
+  box-shadow: none;
+}
+
 
 .top-profession-set-box {
   text-align: center;

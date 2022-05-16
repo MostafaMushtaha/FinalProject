@@ -70,12 +70,12 @@
 
 /*************************Insurance Home*************************/
 .insurance-home-block {
-    background: url("https://i.imgur.com/FPRBJFr.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 750px;
-    text-align: center;
+  background: url("https://i.imgur.com/FPRBJFr.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 750px;
+  text-align: center;
 }
 
 .insurance-home-h1 {
@@ -173,6 +173,43 @@
 
 /*************************Health Plans block*************************/
 
+.health-plans-block {
+  height: 65rem;
+  background-color: #DAE5D0;
+}
+
+.health-plans-div {
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: white;
+    border: 1px solid white;
+    margin: 5% auto 0;
+
+}
+
+.health-plans-set {
+    width: 70%;
+    height: auto;
+    display: flex;
+
+    background-color: #0278ae;
+}
+
+
+.health-plans-h1 {
+  text-align: center;
+  opacity: 0.6;
+  padding: 3% 0 0.5%;
+}
+
+.health-plans-heading-p {
+  text-align: center;
+  opacity: 0.6;
+  font-size: 1.3rem;
+}
 
 
 
@@ -210,7 +247,6 @@
 }
 
 
-/*****************************************************************/
 /*************************Achievements block fifth block*************************/
 
 .achievements-block {
