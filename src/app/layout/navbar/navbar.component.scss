@@ -7,13 +7,26 @@
 
 .brand-img {
   width: 50px;
-  padding-right: 5px;
-  padding-bottom: 10px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 35%;
+  padding: 1%;
 }
 
 .navbar-brand {
   font-size: 1.6rem;
   font-weight: bold;
+  background: linear-gradient(150deg, #FF6B6B, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: animate1 3s infinite linear;
+}
+
+@keyframes animate1 {
+  to {
+    background-position: 200%;
+  }
 }
 
 //set1 carries healthcare-health insuarnce about....
@@ -62,7 +75,7 @@
 }
 
 .nav-item:hover .nav-link {
-  color: blue;
+  color: #2F8F9D;
   transition-delay: 0.25s;
 }
 
@@ -71,7 +84,7 @@ a.nav-link {
   margin-left: 10px;
 }
 
-.navbar-nav .nav-link  {
+.navbar-nav .nav-link {
   color: white;
 
 }
