@@ -16,7 +16,7 @@ import { NgOtpInputModule } from 'ng-otp-input';
 import { DropdownModule } from 'primeng/dropdown';
 import { IndexOfPipe } from 'src/app/services/pipes/index-of-pipe';
 import { PasswordModule } from 'primeng/password';
-import {CheckboxModule} from 'primeng/checkbox';
+import {GMapModule} from 'primeng/gmap';
 import { DividerModule } from 'primeng/divider';
 import { TabViewModule } from 'primeng/tabview';
 import { ConfirmPopupModule } from 'primeng/confirmpopup';
@@ -38,6 +38,10 @@ import {RadioButtonModule} from 'primeng/radiobutton'
 import { Patient2Component } from 'src/app/pages/patient2/patient2.component';
 import { DocSignup2Component } from 'src/app/pages/doc-signup2/doc-signup2.component';
 import { NurseSignup2Component } from 'src/app/pages/nurse-signup2/nurse-signup2.component';
+import { SearchResultsComponent } from 'src/app/pages/search-results/search-results.component';
+import { DoctorProfileComponent } from 'src/app/pages/doctor-profile/doctor-profile.component';
+import { PatientProfileComponent } from 'src/app/pages/patient-profile/patient-profile.component';
+import { NurseProfileComponent } from 'src/app/pages/nurse-profile/nurse-profile.component';
 
 
 
@@ -62,6 +66,10 @@ import { NurseSignup2Component } from 'src/app/pages/nurse-signup2/nurse-signup2
     Patient2Component,
     DocSignup2Component,
     NurseSignup2Component,
+    SearchResultsComponent,
+    DoctorProfileComponent,
+    PatientProfileComponent,
+    NurseProfileComponent,   
   ],
   imports: [
     FormsModule,
