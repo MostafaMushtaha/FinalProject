@@ -456,6 +456,10 @@
   text-align: center;
 }
 
+:host ::ng-deep .p-panel .p-panel-header .p-panel-header-icon:focus {
+  box-shadow: none;
+}
+
 .view-more-btn {
   padding: 1% 2%;
   font-size: 1rem;

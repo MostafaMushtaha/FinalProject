@@ -181,23 +181,49 @@
 .health-plans-div {
   width: 70%;
   height: 50rem;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  background-color: white;
-  border: 1px solid white;
+  background-color: #0278ae;
   margin: 5% auto 0;
 
 }
 
-.health-plans-set {
-  width: 90%;
-  height: auto;
-  display: flex;
 
-  background-color: #0278ae;
+.health-plans-set1-row {
+
+  border: 1px solid white;
+  background-color: white;
+
+  margin: 3%;
+
+  display: flex;
+  flex-direction: row;
 }
 
+.health-plans-set1-row-col1 {
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+
+.health-plans-set1-row-col2 {
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+
+.health-plans-set1-row-col3 {
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+
+.health-plans-set1-row-col4 {
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+
+
+
+.justify-text {
+  padding: 5% 10%;
+  flex-grow: 4;
+}
 
 .health-plans-h1 {
   text-align: center;
@@ -238,6 +264,11 @@
 .faq-p {
   text-align: center;
 }
+
+:host ::ng-deep .p-panel .p-panel-header .p-panel-header-icon:focus {
+  box-shadow: none;
+}
+
 
 .view-more-btn {
   padding: 1% 2%;
