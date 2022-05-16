@@ -15,6 +15,10 @@ import { DoctorSignUpOneComponent } from 'src/app/pages/doctor-sign-up-one/docto
 import { Patient2Component } from 'src/app/pages/patient2/patient2.component';
 import { DocSignup2Component } from 'src/app/pages/doc-signup2/doc-signup2.component';
 import { NurseSignup2Component } from 'src/app/pages/nurse-signup2/nurse-signup2.component';
+import { SearchResultsComponent } from 'src/app/pages/search-results/search-results.component';
+import { DoctorProfileComponent } from 'src/app/pages/doctor-profile/doctor-profile.component';
+import { PatientProfileComponent } from 'src/app/pages/patient-profile/patient-profile.component';
+import { NurseProfileComponent } from 'src/app/pages/nurse-profile/nurse-profile.component';
 
 
 
@@ -35,6 +39,10 @@ const routes: Routes = [
       { path: 'nurse-signup-phase-2', component: NurseSignup2Component },
       { path: 'doctor-signup-phase-1', component: DoctorSignUpOneComponent },
       { path: 'doctor-signup-phase-2', component: DocSignup2Component },
+      { path: 'search-results', component: SearchResultsComponent },
+      { path: 'doctor-profile', component: DoctorProfileComponent },
+      { path: 'patient-profile', component: PatientProfileComponent },
+      { path: 'nurse-profile', component: NurseProfileComponent },
       
       { path: '', redirectTo: 'home', pathMatch: 'full' }
     ],
