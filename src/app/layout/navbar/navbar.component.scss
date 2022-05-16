@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #306a95;
+  background-color: #2666CF;
   margin: 0rem;
   padding-right: 6rem;
   padding-left: 6rem;
@@ -56,7 +56,7 @@
   transition-duration: 0.5s;
   transition-timing-function: linear;
 
-  background: linear-gradient(to right, #306a95 50%, white 50%) left;
+  background: linear-gradient(to right, #2666CF 50%, white 50%) left;
   background-size: 250%;
 
   .pi-search {
@@ -75,7 +75,7 @@
 }
 
 .nav-item:hover .nav-link {
-  color: #2F8F9D;
+  color: #2666CF;
   transition-delay: 0.25s;
 }
 
