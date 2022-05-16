@@ -10,7 +10,7 @@ body {
   height: 34rem;
   background: transparent;
   border-radius: 15px;
-  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 5px #999;
   backdrop-filter: blur(10px);
 }
 
@@ -51,7 +51,7 @@ body {
   font-size: 1.8rem;
 }
 
-.card-body h4:hover{
+.card-body h4:hover {
   box-shadow: none;
 }
 
@@ -73,6 +73,7 @@ body {
   width: 16rem;
   height: 16rem;
 }
+
 .card-body img:hover {
   box-shadow: none;
 }

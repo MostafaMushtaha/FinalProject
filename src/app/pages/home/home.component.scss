@@ -232,7 +232,7 @@
 
 .search button {
   position: absolute;
-  top: 1px;
+  top: 0.5px;
   right: 1px;
   height: 2.4rem;
   width: 20%;
@@ -366,6 +366,13 @@
 
 .top-profession-name {
   font-size: 1.3rem;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  /* number of lines to show */
+  -webkit-box-orient: vertical;
+
+  overflow: hidden;
   border: 1px solid white;
   background-color: white;
   color: black;
@@ -376,7 +383,14 @@
 .top-profession-specialty {
   font-size: 1.1rem;
   margin-top: 5%;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /* number of lines to show */
+  -webkit-box-orient: vertical;
+
 }
+
 
 .top-profession-exp {
   font-size: 1rem;
