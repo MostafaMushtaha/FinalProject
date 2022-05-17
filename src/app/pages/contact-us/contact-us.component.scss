@@ -8,24 +8,27 @@
 }
 
 .form {
+  width: 35%;
+  height: 100%;
+  border: none;
+}
+
+
+.sumbitBtn {
+  border-radius: 10px;
+}
+
+.subjectTxt {
+  margin-right: 1rem;
+}
+
+.cartImg {
   width: 40%;
   height: 100%;
 }
-.subjectTxt {
-    margin-right: 1rem;
-}
 
-.mapInfo{
-    width: 40%;
-    height: 100%;
-}
-.map{
-    width: 100%;
-    height: 50%;
-}
-.contactInfo {
-    background-color: aqua;
-    width: 100%;
-    height: 50%;
-
+.contactUsImg{
+    height: 29.5rem;
+    width: 22rem;
+    margin-left: 7rem;
 }
