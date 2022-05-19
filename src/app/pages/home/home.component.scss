@@ -48,7 +48,6 @@
 }
 
 
-
 /*************************Navigate to top of the page btn*************************/
 .to-top-icon {
 
@@ -212,7 +211,8 @@
 .search input {
   height: 40px;
   border: 1px solid #d6d4d4;
-  text-indent: 35px;
+  padding-left: 5%;
+  padding-right: 22%;
   border-radius: 20px;
   box-shadow: none;
   overflow: hidden;
@@ -421,7 +421,6 @@
   color: orange;
 }
 
-
 .top-indicator-btn {
   text-indent: 0;
   height: 40px;
@@ -514,7 +513,7 @@
 }
 
 .contact-us-icon:hover {
-  color: #205375;
+  color: #54E346;
 }
 
 /*****************************************************************/
