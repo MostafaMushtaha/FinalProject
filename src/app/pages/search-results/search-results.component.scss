@@ -109,7 +109,7 @@
 
 /************ Search result div ************/
 .search-result-block {
-  min-height: 200vw;
+  min-height: 190vw;
   background-color: #e2e6ea;
   padding-bottom: 5%;
 }
@@ -185,7 +185,7 @@
 
 
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -199,7 +199,7 @@
   font-weight: bold;
 }
 
-.title {
+.title-doctor {
   white-space: nowrap;
   height: 15%;
   overflow: scroll;
@@ -207,6 +207,17 @@
 
   border-top: 1px solid grey;
   margin: 0;
+}
+
+
+.title-nurse {
+    white-space: nowrap;
+    height: 18%;
+    overflow: scroll;
+    overflow-x: hidden;
+  
+    border-top: 1px solid grey;
+    margin: 0;  
 }
 
 .title-list {
@@ -219,7 +230,7 @@
   font-weight: bold;
 }
 
-.specialist {
+.specialist-doctor {
   white-space: nowrap;
   height: 15%;
   overflow: scroll;
@@ -227,6 +238,17 @@
 
   border-top: 1px solid grey;
   margin: 0;
+}
+
+.specialist-nurse{
+    white-space: nowrap;
+    height: 18%;
+    overflow: scroll;
+    overflow-x: hidden;
+  
+    border-top: 1px solid grey;
+    margin: 0;
+  
 }
 
 .insurance-heading {
@@ -402,6 +424,24 @@
   background-color: green;
   margin-right: 15%;
   border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+.search-result-pagination {
+    background-color: #e2e6ea;
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 1%;
+}
+
+.pagination {
+    justify-content: center;
 }
 
 /******** Scrollbar ********/
