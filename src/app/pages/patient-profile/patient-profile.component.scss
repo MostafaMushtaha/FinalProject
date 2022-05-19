@@ -1,0 +1,54 @@
+.center {
+    flex-direction: row;
+}
+.leftSide {
+    // background-color: red;
+    width: 60%;
+    height: 100%;
+}
+.rightSide{
+    background-color: aqua;
+    width: 30rem;
+    height: 33rem;
+}
+.infoCard {
+    background-color: white;
+    width: 82%;
+    height: 27rem;
+    margin: 2rem;
+    margin-left: 6rem;
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 19%);
+}
+.infoCardLeft{
+    width: 30%;
+    height: 100%;
+}
+.profilePicture {
+    // padding-top: 1rem;
+    width: 13rem;
+    height: 100%;
+    // border-right: 1px solid silver;
+}
+.headshot {
+    flex-shrink: 0;
+    margin: 2rem;
+    height: 10rem;
+    width: 10rem;
+    border: calc(8px + 0.2vw) solid transparent;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    background-size: cover;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px 5px rgb(0 0 0 / 20%);
+}
+
+.headshot-1 {
+	border-radius: 30%;
+	background-image: var(--img-url), linear-gradient(#f9f047, #0fd850);
+}
+
+.userName {
+    width: 70%;
+    height: 100%;
+}
