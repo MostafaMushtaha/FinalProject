@@ -11,11 +11,9 @@
       <ul class="navbar-nav set1">
         <li class="nav-item" [routerLinkActive]="['active']">
           <a class="nav-link" [routerLink]="['home']" href="http://localhost:4200/#/home">HealthCare</a>
-          <!--Set as active when clicked on-->
         </li>
         <li class="nav-item" [routerLinkActive]="['active']">
           <a class="nav-link" [routerLink]="['home2']" href="http://localhost:4200/#/home2">Health Insuarnce</a>
-          <!--Set as active when clicked on-->
         </li>
         <li class="nav-item" [routerLinkActive]="['active']">
           <a class="nav-link" [routerLink]="['about-us']" aria-current="page"
@@ -34,6 +32,20 @@
               Up</a></li>
           <li class="nav-item1" [routerLinkActive]="['active']"><a href="http://localhost:4200/#/login"
               class="nav-link nav-link-account" [routerLink]="['login']"><i class="icon pi pi-user"></i>Login</a></li>
+
+          <li class="nav-item1 dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="icon pi  pi-bell"></i>Notifications
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <p class="dropdown-item">Action</p>
+              <p class="dropdown-item">Action</p>
+              <p class="dropdown-item">Action</p>
+              <p class="dropdown-item">Action</p>
+            </div>
+          </li>
+
         </ul>
       </div>
 

@@ -1,8 +1,7 @@
 .navbar {
   background-color: #2666CF;
   margin: 0rem;
-  padding-right: 6rem;
-  padding-left: 6rem;
+  padding-left: 3rem;
 }
 
 .brand-img {
@@ -34,10 +33,6 @@
   margin: auto;
 }
 
-.navbar ul li {
-  margin: 0 2rem 0 0;
-  font-size: 1.5rem;
-}
 
 .navbar-collapse {
   justify-content: space-between;
@@ -56,6 +51,7 @@
   transition-duration: 0.5s;
   transition-timing-function: linear;
 
+  margin-right: 2rem;
   background: linear-gradient(to right, #2666CF 50%, white 50%) left;
   background-size: 250%;
 
@@ -77,6 +73,11 @@
 .nav-item:hover .nav-link {
   color: #2666CF;
   transition-delay: 0.25s;
+}
+
+
+.nav-item1 {
+  margin: 0;
 }
 
 a.nav-link {
