@@ -19,7 +19,12 @@ export class DoctorSignUpOneComponent implements OnInit {
   city: string;
 
   constructor() { }
-
+  drSpecialty = [
+    { name: 'Inpatient' },
+    { name: 'Golden' },
+    { name: 'Golden Plus' },
+    { name: 'None' },
+  ];
   ngOnInit(): void {
     let today = new Date();
     let month = today.getMonth();
