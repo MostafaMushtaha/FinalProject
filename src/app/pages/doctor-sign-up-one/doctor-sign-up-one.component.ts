@@ -16,14 +16,15 @@ export class DoctorSignUpOneComponent implements OnInit {
 
   value: string;
 
-  city: string;
+  specialitySelected: string;
+  gender: string;
 
   constructor() { }
   drSpecialty = [
-    { name: 'Inpatient' },
-    { name: 'Golden' },
-    { name: 'Golden Plus' },
-    { name: 'None' },
+    { name: 'Speciality1' },
+    { name: 'Speciality2' },
+    { name: 'Speciality3' },
+    { name: 'Speciality4' },
   ];
   ngOnInit(): void {
     let today = new Date();
