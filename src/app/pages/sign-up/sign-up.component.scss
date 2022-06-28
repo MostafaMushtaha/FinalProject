@@ -1,24 +1,17 @@
-body {
-  background: url(https://i.imgur.com/D8KOqRL.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: white;
-}
 
 .container {
   margin: 5rem auto;
+  background-color: #fafafa;
   height: 34rem;
-  background: transparent;
   border-radius: 15px;
   box-shadow: rgb(0 0 0 / 29%) 0px 6px 18px 0px;
-  backdrop-filter: blur(10px);
 }
 
 .center h1 {
   text-align: center;
   padding: 20px 0;
-  border-bottom: 1px solid silver;
+  border-bottom: 3px solid rgb(219, 216, 216);
+  border-radius: 35px;
 }
 
 .accType {
@@ -34,20 +27,23 @@ body {
 .card {
   text-align: center;
   margin-top: .5rem;
-  border-radius: 15%;
+  border: 5px solid sliver;
+  border-radius: 50px;
 }
 
 .card :hover {
   box-shadow: rgb(0 0 0 / 29%) 0px 6px 18px 0px;
-  border-radius: 15%;
-  // transition: ;
+  border-radius: 50px;
+}
+
+.card-title {
+  color: #646FD4;
+  margin: 0;
 }
 
 .card-body h4 {
   text-align: center;
   padding: 20px 0;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid silver;
   text-decoration: none;
   font-size: 1.8rem;
 }
@@ -73,6 +69,7 @@ body {
   position: relative;
   width: 16rem;
   height: 16rem;
+  margin-top: 10%;
 }
 
 .card-body img:hover {

@@ -50,11 +50,11 @@
 body::-webkit-scrollbar {
   width: 1em;
 }
- 
+
 body::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
- 
+
 body::-webkit-scrollbar-thumb {
   background-color: darkgrey;
   outline: 1px solid slategrey;
@@ -92,7 +92,8 @@ body::-webkit-scrollbar-thumb {
 .insurance-home-h1 {
   font-size: 3rem;
   color: #fff;
-  padding: 8% 27% 10%;
+  padding: 8% 27% 13%;
+  margin-bottom: 0;
   line-height: 1.5;
   font-weight: 900;
   font-style: normal;
@@ -185,69 +186,9 @@ body::-webkit-scrollbar-thumb {
 /*************************Health Plans block*************************/
 
 .health-plans-block {
-  height: 35rem;
+  height: auto;
   background-color: #DAE5D0;
-}
-
-.health-plans-div {
-  width: 85%;
-  height: 15rem;
-  background-color: #0278ae;
-  margin: 5% auto 0;
-
-}
-
-
-.health-plans-set1-row {
-
-  border: 1px solid white;
-  background-color: white;
-
-  margin-left: 3%;
-
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.health-plans-set1-row-col1 {
-  display: flex;
-  flex: 1 1 auto;
-  align-items: flex-start;
-  flex-direction: column;
-  border-right: 4px solid #0278ae;
-  width: 100px;
-}
-
-.health-plans-set1-row-col2 {
-  display: flex;
-  flex: 1 1 auto;
-  align-items: center;
-  flex-direction: column;
-  width: 100px;
-}
-
-.health-plans-set1-row-col3 {
-  display: flex;
-  flex: 1 1 auto;
-  align-items: center;
-  flex-direction: column;
-  width: 100px;
-}
-
-.health-plans-set1-row-col4 {
-  display: flex;
-  flex: 1 1 auto; 
-  align-items: center;
-  flex-direction: column;
-  width: 100px;
-}
-
-
-.justify-text {
-  margin: 0;
-  padding: 5%;
+  padding-bottom: 5%;
 }
 
 
@@ -262,6 +203,29 @@ body::-webkit-scrollbar-thumb {
   opacity: 0.6;
   font-size: 1.3rem;
 }
+
+
+
+.health-plans-div {
+  width: 85%;
+
+  text-align: center;
+
+  background-color: White;
+  box-shadow: rgb(0 0 0 / 29%) 0px 6px 18px 0px;
+  
+  border-radius: 50px;
+  
+  margin: 5% auto 0;
+  padding: 3%;
+}
+
+.insuarnce-copmany-img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+
 
 
 
@@ -308,7 +272,7 @@ body::-webkit-scrollbar-thumb {
 
 .achievements-block {
   height: auto;
-  background-color: #1E5128;
+  background-color: #2f8540;
   text-align: center;
 }
 
@@ -328,7 +292,7 @@ body::-webkit-scrollbar-thumb {
 /*************************Contact us block sixth block*************************/
 
 .contact-us-block {
-  background-color: #357C3C;
+  background-color: #44a04d;
   position: relative;
 }
 

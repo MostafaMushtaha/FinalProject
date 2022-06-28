@@ -1,77 +1,433 @@
-<div class="container PSContainer justify-content-center">
-  <div class="center d-flex ">
-    <div class="col leftSide justify-content-center gap">
-      <img src="https://i.imgur.com/8paCh6n.png" alt="patientLogo" class="row">
-      <a class="next-btn" href="#"><button pButton pRipple type="button"
-          label="Register" class="p-button-raised p-button-success"></button>
-      </a>
+<div class="card">
+  <div class="left-side">
+    <img class="profile-img" src="https://i.imgur.com/8paCh6n.png" alt="Profile pic">
+    <h4 class="user-type">Doctor</h4>
+    <div class="image-upload-div">
+      <div class="image-upload">
+        <label for="file-input">
+          Upload profile picture?
+        </label>
+        <input id="file-input" type="file">
+      </div>
     </div>
-    <div class="col info justify-content-center">
-      <div class="row header ">
-        <h1 class="headerTxt ">Information</h1>
-      </div>
-      <div class="row userInfo">
-        <div class="txt_field" name="userFirstName">
-          <input type="text" required>
-          <span></span>
-          <label>First Name</label>
-        </div>
-        <div class="txt_field userLastName" name="userLastName">
-          <input type="text" required>
-          <span></span>
-          <label>Last Name</label>
-        </div>
-        <div class="birthDate field col-12 md:col-4">
-          <label for="basic" class="DataTxt calenderTxt">Birth Date</label><br>
-          <p-calendar inputId="basic" [(ngModel)]="date1"></p-calendar>
-        </div>
-        <div class="gender d-flex">
-          <label class="genderTxt">Gender</label>
-          <div class="field-radiobutton maleBtn">
-            <p-radioButton class="gTxt" value="male" [(ngModel)]="gender" inputId="male"></p-radioButton>
-            <label for="male"><img src="https://i.imgur.com/7alkg7M.png" alt="male" class="genderImg"> Male</label>
-          </div>
-          <div class="field-radiobutton femaleBtn">
-            <p-radioButton class="gTxt" value="female" [(ngModel)]="gender" inputId="female"></p-radioButton>
-            <label for="female"><img src="https://i.imgur.com/31PD7OW.png" alt="female" class="genderImg">
-              Female</label>
-          </div>
-        </div>
-        <div class="txt_field" name="userNumber">
-          <input type="number" required>
-          <span></span>
-          <label>Phone Number</label>
-        </div>
-        <div class="txt_field userEmail" name="userEmail">
-          <input type="email" required>
-          <span></span>
-          <label>Email</label>
-        </div>
-        <div class="password DataTxt">
-          <h5 class="passTxt">Show Password</h5>
-          <p-password [(ngModel)]="value" [toggleMask]="true"></p-password>
-        </div>
-        <div class="txt_field userLastName" name="userLastName">
-          <input type="text" required>
-          <span></span>
-          <label>Qualification</label>
-        </div>
-        <div class="specialty DDMenu passTxt">
-          <h5>Specialty</h5>
-          <p-dropdown [options]="drSpecialty" [(ngModel)]="specialitySelected" placeholder="Select a Specialty"
-            optionLabel="name" [showClear]="true"></p-dropdown>
-        </div>
-        <div class="txt_field" name="userBMDCNumber">
-          <input type="number" required>
-          <span></span>
-          <label>BMDC Registeration Number</label>
-        </div>
-        <div class="txt_field streetName" name="address">
-          <input type="text" required>
-          <span></span>
-          <label>Hospital/Clinic Address</label>
-        </div>
-      </div>
+    <div class="submit">
+      <input class="submit-btn btn btn-primary" type="submit" value="Register">
     </div>
   </div>
+
+
+  <div class="right-side">
+    <p-tabView>
+      <p-tabPanel header="ID">
+        <form>
+          <div class="form-row row-1">
+            <div class="fullname">
+              <label for="first-name">First name</label>
+              <input type="text" class="form-control" id="first-name" placeholder="First name" required>
+            </div>
+            <div class="fullname">
+              <label for="middle-name">Middle name</label>
+              <input type="text" class="form-control" id="middle-name" placeholder="Middle name" required>
+            </div>
+            <div class="fullname">
+              <label for="last-name">Last name</label>
+              <input type="text" class="form-control" id="last-name" placeholder="Last name" required>
+            </div>
+          </div>
+
+
+          <div class="form-row row-1">
+            <div class="birth">
+              <label for="birthdate">Birthdate</label>
+              <input type='date' class="form-control birth-input" id="birthdate" required>
+            </div>
+
+            <div class="gender">
+
+              <label class="form-check-label gender-label" for="gender">Gender</label>
+
+              <div class="form-check male-check">
+                <input class="form-check-input male-check-circle" type="radio" name="gender" id="male">
+                <label class="form-check-label" for="male">
+                  <img class="gender-icon" src="https://i.imgur.com/7alkg7M.png" alt="Male-icon"> Male
+                </label>
+              </div>
+
+              <div class="form-check female-check">
+                <input class="form-check-input female-check-circle" type="radio" name="gender" id="female">
+                <label class="form-check-label" for="female">
+                  <img class="gender-icon" src="https://i.imgur.com/31PD7OW.png" alt="Female-icon"> Female
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-row row-1">
+            <div class="email">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control" id="email" placeholder="Name@example.com" required>
+            </div>
+
+            <div class="phone">
+              <label for="phone">Phone number</label>
+              <input type="tel" class="form-control" id="phone" pattern="^01[0-2,5]{1}[0-9]{8}$"
+                placeholder="Vodafone/Etisalat/Orange/We" required>
+            </div>
+          </div>
+
+          <div class="form-inline row-1">
+            <div class="password">
+              <label for="passowrd">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Password" minlength="8"
+                maxlength="20" aria-describedby="passwordHelpBlock">
+              <small id="password" class="text-muted">
+                Must be 8-20 characters long.
+              </small>
+            </div>
+            <div class="form-check terms-conditions">
+              <input class="form-check-input" type="checkbox" id="terms-conditions" required>
+              <label class="form-check-label" for="terms-conditions">
+                I agree to terms and conditions
+              </label>
+            </div>
+          </div>
+        </form>
+      </p-tabPanel>
+
+      <p-tabPanel header="Profession Details">
+        <form>
+
+          <div class="form-row row-2">
+            <div class="title">
+              <label for="title">Title</label>
+              <select class="form-control center-select" id="title" multiple size="3" required>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+
+            </div>
+            <div class="specialist">
+              <label for="specialist">Specialist</label>
+              <select class="form-control center-select" id="specialist" multiple size="3" required>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row row-3">
+            <small class="multi-select-tip text-muted">Hold down the Ctrl (windows) or Command (Mac) button to select
+              multiple
+              options.</small>
+          </div>
+
+          <div class="form-row row-4">
+            <div class="specializations-of-specialist">
+              <label for="specializations-of-specialist">Specializations of Specialist</label>
+              <select class="form-control center-select" id="specializations-of-specialist" multiple size="3" required>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row row-3">
+            <small class="multi-select-tip text-muted">Hold down the Ctrl (windows) or Command (Mac) button to select
+              multiple
+              options.</small>
+          </div>
+
+          <div class="form-row row-1">
+            <div class="insurance">
+              <label for="insurance">Insurance Companies</label>
+              <select class="form-control center-select" id="insurance" multiple size="3" required>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+
+            <div class="experience">
+              <label for="experience">Years of Experience</label>
+              <input type="number" class="form-control" id="experience" min="1" max="100"
+                placeholder="From 1 year to 100 years">
+            </div>
+          </div>
+
+        </form>
+      </p-tabPanel>
+
+      <p-tabPanel header="Work Details">
+        <form>
+
+          <div class="form-row row-1">
+            <div class="clinic-name">
+              <label for="clinic-name">Clinic name</label>
+              <input type="text" class="form-control" id="clinic-name" placeholder="Clinic Name" required>
+            </div>
+          </div>
+
+          <div class="form-row row-2">
+            <div class="city">
+              <label for="city">City</label>
+              <select class="form-control" id="city" required>
+                <option class="disabled-select" selected="true" disabled>All cities</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            <div class="area">
+              <label for="area">Area</label>
+              <select class="form-control" id="area" required>
+                <option class="disabled-select" selected="true" disabled>Choose city first</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row row-4">
+            <div class="location">
+              <label for="location">Location</label>
+              <input type="text" class="form-control" id="location" placeholder="Location (street-building-etc..)"
+                required>
+            </div>
+          </div>
+
+          <div class="form-row row-1">
+
+            <div class="fees">
+              <label for="fees">Examination Fees</label>
+              <input class="form-control" type="number" id="fees" min="10" max="3000" placeholder="Egyptian Pound "
+                required>
+              <small class="multi-select-tip text-muted">Range from 10 to 3000.</small>
+            </div>
+
+            <div class="waiting-time">
+              <label for="waiting-time">Average waiting time</label>
+              <input class="form-control" type="number" id="waiting-time" min="5" max="120"
+                placeholder="Waiting time in minutes" required>
+              <small class="multi-select-tip text-muted">Range from 5 to 120 mins.</small>
+            </div>
+          </div>
+
+          <div class="form-row row-3"><label class="form-check-label working-days-hours-label" for="gender">Working
+              Days/Hours</label>
+          </div>
+          <div class="form-row row-5">
+            <div class="form-row row-3">
+              <div class="working-days-hours">
+                <div class="form-check day">
+                  <input class="form-check-input" type="checkbox" name="sunday" id="sunday">
+                  <label class="form-check-label day-label" for="sunday">
+                    Sunday
+                  </label>
+                </div>
+
+                <div class="working-hours-from">
+                  <label class="from-label" for="from">From</label>
+                  <input type="time" class="form-control" id="from">
+                </div>
+
+
+                <div class="working-hours-to">
+                  <label class="to-label" for="to">To</label>
+                  <input type="time" class="form-control" id="to">
+                </div>
+
+                <div class="booking-time">
+                  <label class="booking-time-label" for="booking">Booking time</label>
+                  <input type="number" class="form-control" id="booking" min="30" max="1440" placeholder="ex: every 60 mins">  
+                </div>
+
+              </div>
+            </div>
+            <div class="form-row row-3">
+              <div class="working-days-hours">
+                <div class="form-check day">
+                  <input class="form-check-input" type="checkbox" name="monday" id="monday">
+                  <label class="form-check-label day-label" for="monday">
+                    Monday
+                  </label>
+                </div>
+
+                <div class="working-hours-from">
+                  <label class="from-label" for="from">From</label>
+                  <input type="time" class="form-control" id="from">
+                </div>
+
+
+                <div class="working-hours-to">
+                  <label class="to-label" for="to">To</label>
+                  <input type="time" class="form-control" id="to">
+                </div>
+
+                <div class="booking-time">
+                  <label class="booking-time-label" for="booking">Booking time</label>
+                  <input type="number" class="form-control" id="booking" min="30" max="1440" placeholder="ex: every 60 mins">  
+                </div>
+
+              </div>
+            </div>
+            <div class="form-row row-3">
+              <div class="working-days-hours">
+                <div class="form-check day">
+                  <input class="form-check-input" type="checkbox" name="tuesday" id="tuesday">
+                  <label class="form-check-label day-label" for="tuesday">
+                    Tuesday
+                  </label>
+                </div>
+
+                <div class="working-hours-from">
+                  <label class="from-label" for="from">From</label>
+                  <input type="time" class="form-control" id="from">
+                </div>
+
+
+                <div class="working-hours-to">
+                  <label class="to-label" for="to">To</label>
+                  <input type="time" class="form-control" id="to">
+                </div>
+
+                <div class="booking-time">
+                  <label class="booking-time-label" for="booking">Booking time</label>
+                  <input type="number" class="form-control" id="booking" min="30" max="1440" placeholder="ex: every 60 mins">  
+                </div>
+                
+              </div>
+            </div>
+            <div class="form-row row-3">
+              <div class="working-days-hours">
+                <div class="form-check day">
+                  <input class="form-check-input" type="checkbox" name="wednesday" id="wednesday">
+                  <label class="form-check-label day-label" for="wednesday">
+                    Wednesday
+                  </label>
+                </div>
+
+                <div class="working-hours-from">
+                  <label class="from-label" for="from">From</label>
+                  <input type="time" class="form-control" id="from">
+                </div>
+
+
+                <div class="working-hours-to">
+                  <label class="to-label" for="to">To</label>
+                  <input type="time" class="form-control" id="to">
+                </div>
+
+                <div class="booking-time">
+                  <label class="booking-time-label" for="booking">Booking time</label>
+                  <input type="number" class="form-control" id="booking" min="30" max="1440" placeholder="ex: every 60 mins">  
+                </div>
+                
+              </div>
+            </div>
+            <div class="form-row row-3">
+              <div class="working-days-hours">
+                <div class="form-check day">
+                  <input class="form-check-input" type="checkbox" name="thursday" id="thursday">
+                  <label class="form-check-label day-label" for="thursday">
+                    Thursday
+                  </label>
+                </div>
+
+                <div class="working-hours-from">
+                  <label class="from-label" for="from">From</label>
+                  <input type="time" class="form-control" id="from">
+                </div>
+
+
+                <div class="working-hours-to">
+                  <label class="to-label" for="to">To</label>
+                  <input type="time" class="form-control" id="to">
+                </div>
+
+                <div class="booking-time">
+                  <label class="booking-time-label" for="booking">Booking time</label>
+                  <input type="number" class="form-control" id="booking" min="30" max="1440" placeholder="ex: every 60 mins">  
+                </div>
+                
+              </div>
+            </div>
+            <div class="form-row row-3">
+              <div class="working-days-hours">
+                <div class="form-check day">
+                  <input class="form-check-input" type="checkbox" name="friday" id="friday">
+                  <label class="form-check-label day-label" for="friday">
+                    Friday
+                  </label>
+                </div>
+
+                <div class="working-hours-from">
+                  <label class="from-label" for="from">From</label>
+                  <input type="time" class="form-control" id="from">
+                </div>
+
+
+                <div class="working-hours-to">
+                  <label class="to-label" for="to">To</label>
+                  <input type="time" class="form-control" id="to">
+                </div>
+
+                <div class="booking-time">
+                  <label class="booking-time-label" for="booking">Booking time</label>
+                  <input type="number" class="form-control" id="booking" min="30" max="1440" placeholder="ex: every 60 mins">  
+                </div>
+                
+              </div>
+            </div>
+            <div class="form-row row-3">
+              <div class="working-days-hours">
+                <div class="form-check day">
+                  <input class="form-check-input" type="checkbox" name="saturday" id="saturday">
+                  <label class="form-check-label day-label" for="saturday">
+                    Saturday
+                  </label>
+                </div>
+
+                <div class="working-hours-from">
+                  <label class="from-label" for="from">From</label>
+                  <input type="time" class="form-control" id="from">
+                </div>
+
+
+                <div class="working-hours-to">
+                  <label class="to-label" for="to">To</label>
+                  <input type="time" class="form-control" id="to">
+                </div>
+
+                <div class="booking-time">
+                  <label class="booking-time-label" for="booking">Booking time</label>
+                  <input type="number" class="form-control" id="booking" min="30" max="1440" placeholder="ex: every 60 mins">  
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+
+        </form>
+      </p-tabPanel>
+
+    </p-tabView>
+  </div>
+
 </div>

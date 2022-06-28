@@ -73,7 +73,7 @@
 
 /*Main div (Search box)*/
 .search-div {
-  height: 20rem;
+  height: auto;
   width: 70%;
   margin: auto;
 
@@ -83,7 +83,6 @@
   border: 2px solid white;
   border-radius: 20px;
   box-shadow: rgb(0 0 0 / 29%) 0px 6px 18px 0px;
-
   display: block;
 }
 
@@ -95,6 +94,7 @@
 .search-block-h4 {
   padding: 0 0 8% 9%;
   color: grey;
+  opacity: 0.7;
 }
 
 /************First Div************/
@@ -103,7 +103,7 @@
 }
 
 .search-h4 {
-  padding: 2% 0 2% 0;
+  padding: 1rem 0;
   text-align: center;
 }
 
@@ -200,6 +200,7 @@
 /************Third Div************/
 .third-div-search {
   position: relative;
+  margin-bottom: 3rem;
 }
 
 .search {
@@ -232,10 +233,10 @@
 
 .search button {
   position: absolute;
-  top: 0.5px;
-  right: 1px;
-  height: 2.4rem;
-  width: 20%;
+  top: 0.05rem;
+  right: 0;
+  height: auto;
+  width: 12rem;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   box-shadow: none;
@@ -246,10 +247,9 @@
 /*************************Our services block second block*************************/
 
 .our-services-block {
-  background: radial-gradient(#82DBD8, cornflowerblue);
+  background: radial-gradient(#B3F6D8, #52A7C1);
   height: auto;
 }
-
 
 .first-div-services {
   padding: 3%;
@@ -288,11 +288,11 @@
 }
 
 .top-profession-carousel {
-  background-color: #D3E4CD;
+  background-color: #f5f5f5;
 }
 
 .top-profession-div {
-  background-color: #D3E4CD;
+  background-color: #f5f5f5;
 }
 
 .top-profession-h2 {
@@ -318,8 +318,8 @@
 }
 
 :host ::ng-deep .p-tabview .p-tabview-nav {
-  background-color: #D3E4CD;
-  border-color: #D3E4CD;
+  background-color: #f5f5f5;
+  border-color: #f5f5f5;
 }
 
 :host ::ng-deep .p-tabview .p-tabview-nav li .p-tabview-nav-link {
@@ -472,7 +472,7 @@
 
 .achievements-block {
   height: auto;
-  background-color: #1E5128;
+  background-color: #2f8540;
   text-align: center;
 }
 
@@ -492,7 +492,7 @@
 /*************************Contact us block sixth block*************************/
 
 .contact-us-block {
-  background-color: #357C3C;
+  background-color: #44a04d;
   position: relative;
 }
 
