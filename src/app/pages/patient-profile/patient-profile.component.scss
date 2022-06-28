@@ -1,9 +1,31 @@
+.to-top-icon {
+
+  position: fixed;
+  right: 35px;
+  bottom: 85px;
+  background-color: white;
+  color: #5553B7;
+  border: 5px solid #5553B7;
+  border-radius: 50%;
+  font-size: 40px;
+  z-index: 9;
+  scroll-behavior: smooth;
+}
+
+
+.body {
+  background-color: #f7f7f7;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+
 .profile-card {
   width: 70%;
-  height: 30vw;
+  height: auto;
   margin: 5% auto;
   display: flex;
-
+  border-radius: 30px;
 
   background-color: #EEEEEE;
   border: 5px solid #F2F2F2;
@@ -12,11 +34,11 @@
 
 
 .left-side {
-  width: 30%;
   height: auto;
-  flex-grow: 1;
+  flex: 1 1;
   background-color: #85C88A;
-  border-right: 1px solid #fff;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
 }
 
 .welcome-msg {
@@ -31,36 +53,200 @@
 
 .profile-img {
   object-fit: cover;
-  width: 70%;
-  height: 70%;
+  width: 20rem;
+  height: 25rem;
   background-color: #fff;
   border-bottom-right-radius: 100px;
   border: 5px solid white;
-  margin-left: 55%;
+  margin-left: 35%;
 }
 
 
 
 .right-side {
-  width: 70%;
-  flex-grow: 1;
+  flex: 2 1;
 }
 
 .info {
-    padding: 4% 20% 0;
+  padding: 0 5% 3% 20%;
 }
 
 .profile-info {
-    text-align: center;
-    padding-bottom: 10%;
+  text-align: center;
+  padding: 2.5rem 0;
+  margin-bottom: 0;
 }
 
 .details {
-    font-size: 1.3rem;
-    font-weight: bold;
-    margin: 0;
-    padding-bottom: 2%;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 0;
+  padding-bottom: 0.5rem;
 }
+
 .details-ans {
-    font-weight: normal;
+  font-weight: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+
+.edit-btn {
+  display: block;
+  margin: 5rem auto 0;
+  padding: 0.5rem 3rem;
+}
+
+.edit-btn:hover {
+  box-shadow: rgb(0 0 0 / 29%) 0px 6px 18px 0px;
+}
+
+
+
+.medical-history {
+  width: 85%;
+  height: auto;
+  margin: 5% auto;
+  background-color: #EEEEEE;
+  border: 5px solid #F2F2F2;
+  border-radius: 30px;
+  box-shadow: rgb(0 0 0 / 29%) 0px 6px 18px 0px;
+}
+
+.medical-history-heading {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 4%;
+}
+
+.appointments {
+  display: block;
+}
+
+.appointments-requests {
+  margin-left: 5%;
+  margin-bottom: 3%;
+}
+
+.table-scroll {
+  box-shadow: rgb(0 0 0 / 29%) 0px 6px 18px 0px;
+  height: 25.2rem;
+  overflow-x: auto;
+  overflow-y: scroll;
+  margin: 0 5%;
+}
+
+.appointments-table {
+  width: 100%;
+  background-color: #fff;
+}
+
+
+td,
+th {
+  border: 3px solid #EEEEEE;
+  text-align: center;
+  height: 5rem;
+  width: 15rem;
+}
+
+.canecl-btn {
+  display: block;
+  margin: 5% auto;
+}
+
+.appointment-note {
+  margin-left: 5%;
+  margin-top: 1%;
+  color: red;
+}
+
+.upcoming-appointments {
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-bottom: 3%;
+}
+
+.information {
+  margin: 5% 0 5% 5%;
+}
+
+.information-heading {
+  margin-bottom: 2%;
+}
+
+.information-details {
+  font-size: 1.2rem;
+}
+
+.user-medical-details-table {
+  width: 90%;
+  margin: 0% auto;
+  background-color: #fff;
+  box-shadow: rgb(0 0 0 / 29%) 0px 6px 18px 0px;
+}
+
+.user-medical-details {
+  margin: 5% 0;
+}
+
+.user-medical-details-heading {
+  margin-left: 5%;
+  margin-bottom: 3%;
+}
+
+.prescription-block,
+.reports-block {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+
+.prescription-heading,
+.reports-heading {
+  margin-bottom: 3%;
+}
+
+.prescription-set,
+.reports-set {
+  white-space: nowrap;
+  overflow-x: scroll;
+  border: 3px solid #EEEEEE;
+  background-color: #fff;
+  box-shadow: rgb(0 0 0 / 29%) 0px 6px 18px 0px;
+}
+
+.prescription-card,
+.reports-card,
+.add-img-card {
+  display: inline-block;
+  width: 15rem;
+  height: 20rem;
+  margin: 2%;
+}
+
+.prescription-img,
+.reports-img,
+.add-img {
+  object-fit: cover;
+  border: 5px solid #EEEEEE;
+  width: 15rem;
+  height: 20rem;
+}
+
+
+.prescription-card:hover,
+.reports-card:hover,
+.prescription-img:hover,
+.reports-img:hover {
+  width: 30rem;
+  height: 35rem;
+  padding: 1rem;
+  transition-timing-function: ease-in;
+  transition-duration: 0.5s;
+}
+
+.image-upload>input {
+  display: none;
 }

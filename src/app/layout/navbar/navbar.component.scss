@@ -85,10 +85,20 @@ a.nav-link {
   margin-left: 10px;
 }
 
+
+
 .navbar-nav .nav-link {
   color: white;
-
 }
+
+.language-select {
+  margin: 0;
+}
+
+.language-select:hover {
+  font-weight: bold;
+}
+
 
 .icon {
   margin-right: 10px;
