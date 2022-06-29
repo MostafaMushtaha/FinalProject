@@ -12,13 +12,15 @@ import { ForgetPassComponent } from 'src/app/pages/forget-pass/forget-pass.compo
 import { PatientSignUpComponent } from 'src/app/pages/patient-sign-up/patient-sign-up.component';
 import { NurseSignUpComponent } from 'src/app/pages/nurse-sign-up/nurse-sign-up.component';
 import { DoctorSignUpOneComponent } from 'src/app/pages/doctor-sign-up-one/doctor-sign-up-one.component';
-import { Patient2Component } from 'src/app/pages/patient2/patient2.component';
-import { DocSignup2Component } from 'src/app/pages/doc-signup2/doc-signup2.component';
-import { NurseSignup2Component } from 'src/app/pages/nurse-signup2/nurse-signup2.component';
+// import { Patient2Component } from 'src/app/pages/patient2/patient2.component';
+// import { DocSignup2Component } from 'src/app/pages/doc-signup2/doc-signup2.component';
+// import { NurseSignup2Component } from 'src/app/pages/nurse-signup2/nurse-signup2.component';
 import { SearchResultsComponent } from 'src/app/pages/search-results/search-results.component';
 import { DoctorProfileComponent } from 'src/app/pages/doctor-profile/doctor-profile.component';
 import { PatientProfileComponent } from 'src/app/pages/patient-profile/patient-profile.component';
 import { NurseProfileComponent } from 'src/app/pages/nurse-profile/nurse-profile.component';
+import { InsuranceSelectorComponent } from 'src/app/pages/insurance-selector/insurance-selector.component';
+
 
 
 
@@ -34,6 +36,7 @@ const routes: Routes = [
       { path: 'video-call', component: VideoCallComponent },
       { path: 'forget-password', component: ForgetPassComponent },
       { path: 'patient-signup-phase-1', component: PatientSignUpComponent },
+      { path: 'insurance-selector', component: InsuranceSelectorComponent },
       // { path: 'patient-signup-phase-2', component: Patient2Component },
       { path: 'nurse-signup-phase-1', component: NurseSignUpComponent },
       // { path: 'nurse-signup-phase-2', component: NurseSignup2Component },

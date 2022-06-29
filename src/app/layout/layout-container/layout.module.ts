@@ -42,6 +42,8 @@ import { SearchResultsComponent } from 'src/app/pages/search-results/search-resu
 import { DoctorProfileComponent } from 'src/app/pages/doctor-profile/doctor-profile.component';
 import { PatientProfileComponent } from 'src/app/pages/patient-profile/patient-profile.component';
 import { NurseProfileComponent } from 'src/app/pages/nurse-profile/nurse-profile.component';
+import { InsuranceSelectorComponent } from 'src/app/pages/insurance-selector/insurance-selector.component';
+
 
 
 
@@ -54,6 +56,7 @@ import { NurseProfileComponent } from 'src/app/pages/nurse-profile/nurse-profile
     NavbarComponent,
     IndexOfPipe,
     AboutUsComponent,
+    InsuranceSelectorComponent, 
     ContactUsComponent,
     SignUpComponent,
     ForgetPassComponent,
