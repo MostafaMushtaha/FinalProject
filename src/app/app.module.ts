@@ -17,7 +17,7 @@ import {RippleModule} from 'primeng/ripple';
 
 @NgModule({
   declarations: [
-    AppComponent, 
+    AppComponent,
   ],
   imports: [
     BrowserModule,
