@@ -9,15 +9,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgOtpInputModule } from 'ng-otp-input';
 import { DropdownModule } from 'primeng/dropdown';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
-import {RippleModule} from 'primeng/ripple';
-
-
-
-
+import { RippleModule } from 'primeng/ripple';
 
 @NgModule({
   declarations: [
     AppComponent,
+
   ],
   imports: [
     BrowserModule,

@@ -20,7 +20,9 @@ import { DoctorProfileComponent } from 'src/app/pages/doctor-profile/doctor-prof
 import { PatientProfileComponent } from 'src/app/pages/patient-profile/patient-profile.component';
 import { NurseProfileComponent } from 'src/app/pages/nurse-profile/nurse-profile.component';
 import { InsuranceSelectorComponent } from 'src/app/pages/insurance-selector/insurance-selector.component';
-
+import { PatientEditProfileComponent } from 'src/app/pages/patient-edit-profile/patient-edit-profile.component';
+import { DoctorEditProfileComponent } from 'src/app/pages/doctor-edit-profile/doctor-edit-profile.component';
+import { NurseEditProfileComponent } from 'src/app/pages/nurse-edit-profile/nurse-edit-profile.component';
 
 
 
@@ -37,16 +39,18 @@ const routes: Routes = [
       { path: 'forget-password', component: ForgetPassComponent },
       { path: 'patient-signup-phase-1', component: PatientSignUpComponent },
       { path: 'insurance-selector', component: InsuranceSelectorComponent },
-      // { path: 'patient-signup-phase-2', component: Patient2Component },
       { path: 'nurse-signup-phase-1', component: NurseSignUpComponent },
-      // { path: 'nurse-signup-phase-2', component: NurseSignup2Component },
       { path: 'doctor-signup-phase-1', component: DoctorSignUpOneComponent },
-      // { path: 'doctor-signup-phase-2', component: DocSignup2Component },
       { path: 'search-results', component: SearchResultsComponent },
       { path: 'doctor-profile', component: DoctorProfileComponent },
       { path: 'patient-profile', component: PatientProfileComponent },
       { path: 'nurse-profile', component: NurseProfileComponent },
-      
+      { path: 'patient-edit-profile', component: PatientEditProfileComponent },
+      { path: 'doctor-edit-profile', component: DoctorEditProfileComponent },
+      { path: 'nurse-edit-profile', component: NurseEditProfileComponent },
+      // { path: 'patient-signup-phase-2', component: Patient2Component },
+      // { path: 'nurse-signup-phase-2', component: NurseSignup2Component },
+      // { path: 'doctor-signup-phase-2', component: DocSignup2Component },
       { path: '', redirectTo: 'home', pathMatch: 'full' }
     ],
   }
