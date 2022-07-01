@@ -23,7 +23,8 @@
   display: flex;
   flex-direction: column;
   margin: 1.5rem 1rem;
-}  
+}
+
 
 
 .insurer-company {
@@ -35,6 +36,13 @@
   flex: 1 1;
   margin: 0.5rem 1rem;
 }
+
+
+.insurer-company-dropdown::-webkit-scrollbar ,
+.payment-frequency-dropdown::-webkit-scrollbar {
+  display: none;
+}
+
 
 .premium-range {
   flex: 1 1;
