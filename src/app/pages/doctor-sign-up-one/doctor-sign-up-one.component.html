@@ -14,8 +14,6 @@
       <input class="submit-btn btn btn-primary" type="submit" value="Register">
     </div>
   </div>
-
-
   <div class="right-side">
     <p-tabView>
       <p-tabPanel header="ID">
@@ -23,15 +21,18 @@
           <div class="form-row row-1">
             <div class="fullname">
               <label for="first-name">First name</label>
-              <input type="text" class="form-control" id="first-name" placeholder="First name" required>
+              <input type="text" class="form-control" id="first-name" placeholder="First name" name="DocFirstName"
+                value="DocFirstName" required>
             </div>
             <div class="fullname">
               <label for="middle-name">Middle name</label>
-              <input type="text" class="form-control" id="middle-name" placeholder="Middle name" required>
+              <input type="text" class="form-control" id="middle-name" placeholder="Middle name" name="DocMiddleName"
+                value="DocMiddleName" required>
             </div>
             <div class="fullname">
               <label for="last-name">Last name</label>
-              <input type="text" class="form-control" id="last-name" placeholder="Last name" required>
+              <input type="text" class="form-control" id="last-name" placeholder="Last name" name="DocLastName"
+                value="DocLastName" required>
             </div>
           </div>
 
@@ -39,7 +40,8 @@
           <div class="form-row row-1">
             <div class="birth">
               <label for="birthdate">Birthdate</label>
-              <input type='date' class="form-control birth-input" id="birthdate" required>
+              <input type='date' class="form-control birth-input" id="birthdate" name="DocBDate" value="DocBDate"
+                required>
             </div>
 
             <div class="gender">
@@ -65,13 +67,14 @@
           <div class="form-row row-1">
             <div class="email">
               <label for="email">Email address</label>
-              <input type="email" class="form-control" id="email" placeholder="Name@example.com" required>
+              <input type="email" class="form-control" id="email" placeholder="Name@example.com" name="DocMail"
+                value="DocMail" required>
             </div>
 
             <div class="phone">
               <label for="phone">Phone number</label>
               <input type="tel" class="form-control" id="phone" pattern="^01[0-2,5]{1}[0-9]{8}$"
-                placeholder="Vodafone/Etisalat/Orange/We" required>
+                placeholder="Vodafone/Etisalat/Orange/We" name="DocNumber" value="DocNumber" required>
             </div>
           </div>
 
@@ -79,7 +82,7 @@
             <div class="password">
               <label for="passowrd">Password</label>
               <input type="password" class="form-control" id="password" placeholder="Password" minlength="8"
-                maxlength="20" aria-describedby="passwordHelpBlock">
+                maxlength="20" aria-describedby="passwordHelpBlock" name="DocPass" value="DocPass">
               <small id="password" class="text-muted">
                 Must be 8-20 characters long.
               </small>
@@ -100,7 +103,8 @@
           <div class="form-row row-2">
             <div class="title">
               <label for="title">Title</label>
-              <select class="form-control center-select" id="title" multiple size="3" required>
+              <select class="form-control center-select" id="title" multiple size="3" name="DocTitle" value="DocTitle"
+                required>
                 <option>Junior doctor</option>
                 <option>Consultant</option>
                 <option>SAS doctor</option>
@@ -115,7 +119,8 @@
             </div>
             <div class="specialist">
               <label for="specialist">Specialist</label>
-              <select class="form-control center-select" id="specialist" multiple size="3" required>
+              <select class="form-control center-select" id="specialist" multiple size="3" name="DocSpec"
+                value="DocSpec" required>
                 <option>Allergist/Immunologist</option>
                 <option>Anesthesiologists</option>
                 <option>Cardiologist</option>
@@ -166,7 +171,8 @@
           <div class="form-row row-4">
             <div class="specializations-of-specialist">
               <label for="specializations-of-specialist">Specializations of Specialist</label>
-              <select class="form-control center-select" id="specializations-of-specialist" multiple size="3" required>
+              <select class="form-control center-select" id="specializations-of-specialist" multiple size="3"
+                name="DocSOS" value="DocSOS" required>
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
@@ -185,7 +191,8 @@
           <div class="form-row row-1">
             <div class="insurance">
               <label for="insurance">Insurance Companies</label>
-              <select class="form-control center-select" id="insurance" multiple size="3" required>
+              <select class="form-control center-select" id="insurance" multiple size="3" name="DocIC" value="DocIC"
+                required>
                 <option>Allianz</option>
                 <option>MetLife</option>
                 <option>Amanleek</option>
@@ -196,27 +203,26 @@
             <div class="experience">
               <label for="experience">Years of Experience</label>
               <input type="number" class="form-control" id="experience" min="1" max="100"
-                placeholder="From 1 year to 100 years">
+                placeholder="From 1 year to 100 years" name="DocYOE" value="DocYOE">
             </div>
           </div>
-
         </form>
       </p-tabPanel>
-
       <p-tabPanel header="Work Details">
         <form>
 
           <div class="form-row row-1">
             <div class="clinic-name">
               <label for="clinic-name">Clinic name</label>
-              <input type="text" class="form-control" id="clinic-name" placeholder="Clinic Name" required>
+              <input type="text" class="form-control" id="clinic-name" placeholder="Clinic Name" name="DocClinicName"
+                value="DocClinicName" required>
             </div>
           </div>
 
           <div class="form-row row-2">
             <div class="city">
               <label for="city">City</label>
-              <select class="form-control" id="city" required>
+              <select class="form-control" id="city" name="DocCity" value="DocCity" required>
                 <option class="disabled-select" selected="true" disabled>All cities</option>
                 <option>1</option>
                 <option>2</option>
@@ -227,7 +233,7 @@
             </div>
             <div class="area">
               <label for="area">Area</label>
-              <select class="form-control" id="area" required>
+              <select class="form-control" id="area" name="DocArea" value="DocArea" required>
                 <option class="disabled-select" selected="true" disabled>Choose city first</option>
                 <option>1</option>
                 <option>2</option>
@@ -242,7 +248,7 @@
             <div class="location">
               <label for="location">Location</label>
               <input type="text" class="form-control" id="location" placeholder="Location (street-building-etc..)"
-                required>
+                name="DocLocation" value="DocLocation" required>
             </div>
           </div>
 
@@ -251,14 +257,14 @@
             <div class="fees">
               <label for="fees">Examination Fees</label>
               <input class="form-control" type="number" id="fees" min="10" max="3000" placeholder="Egyptian Pound "
-                required>
+                name="DocFees" value="DocFees" required>
               <small class="multi-select-tip text-muted">Range from 10 to 3000.</small>
             </div>
 
             <div class="waiting-time">
               <label for="waiting-time">Average waiting time</label>
-              <input class="form-control" type="number" id="waiting-time" min="5" max="120"
-                placeholder="Waiting time in minutes" required>
+              <input class="form-control" type="number" id="waiting-time" min="5" max="120" name="DocAVGWaitingTime"
+                value="DocAVGWaitingTime" placeholder="Waiting time in minutes" required>
               <small class="multi-select-tip text-muted">Range from 5 to 120 mins.</small>
             </div>
           </div>
@@ -289,7 +295,12 @@
 
                 <div class="booking-time">
                   <label class="booking-time-label" for="booking">Booking time</label>
+<<<<<<< HEAD
                   <input type="number" class="form-control" id="booking" min="10" max="1440" placeholder="ex: every 60 mins">  
+=======
+                  <input type="number" class="form-control" id="booking" min="30" max="1440"
+                    placeholder="ex: every 60 mins">
+>>>>>>> main
                 </div>
 
               </div>
@@ -316,7 +327,12 @@
 
                 <div class="booking-time">
                   <label class="booking-time-label" for="booking">Booking time</label>
+<<<<<<< HEAD
                   <input type="number" class="form-control" id="booking" min="10" max="1440" placeholder="ex: every 60 mins">  
+=======
+                  <input type="number" class="form-control" id="booking" min="30" max="1440"
+                    placeholder="ex: every 60 mins">
+>>>>>>> main
                 </div>
 
               </div>
@@ -343,9 +359,14 @@
 
                 <div class="booking-time">
                   <label class="booking-time-label" for="booking">Booking time</label>
+<<<<<<< HEAD
                   <input type="number" class="form-control" id="booking" min="10" max="1440" placeholder="ex: every 60 mins">  
+=======
+                  <input type="number" class="form-control" id="booking" min="30" max="1440"
+                    placeholder="ex: every 60 mins">
+>>>>>>> main
                 </div>
-                
+
               </div>
             </div>
             <div class="form-row row-3">
@@ -370,9 +391,14 @@
 
                 <div class="booking-time">
                   <label class="booking-time-label" for="booking">Booking time</label>
+<<<<<<< HEAD
                   <input type="number" class="form-control" id="booking" min="10" max="1440" placeholder="ex: every 60 mins">  
+=======
+                  <input type="number" class="form-control" id="booking" min="30" max="1440"
+                    placeholder="ex: every 60 mins">
+>>>>>>> main
                 </div>
-                
+
               </div>
             </div>
             <div class="form-row row-3">
@@ -397,9 +423,14 @@
 
                 <div class="booking-time">
                   <label class="booking-time-label" for="booking">Booking time</label>
+<<<<<<< HEAD
                   <input type="number" class="form-control" id="booking" min="10" max="1440" placeholder="ex: every 60 mins">  
+=======
+                  <input type="number" class="form-control" id="booking" min="30" max="1440"
+                    placeholder="ex: every 60 mins">
+>>>>>>> main
                 </div>
-                
+
               </div>
             </div>
             <div class="form-row row-3">
@@ -424,9 +455,14 @@
 
                 <div class="booking-time">
                   <label class="booking-time-label" for="booking">Booking time</label>
+<<<<<<< HEAD
                   <input type="number" class="form-control" id="booking" min="10" max="1440" placeholder="ex: every 60 mins">  
+=======
+                  <input type="number" class="form-control" id="booking" min="30" max="1440"
+                    placeholder="ex: every 60 mins">
+>>>>>>> main
                 </div>
-                
+
               </div>
             </div>
             <div class="form-row row-3">
@@ -451,9 +487,14 @@
 
                 <div class="booking-time">
                   <label class="booking-time-label" for="booking">Booking time</label>
+<<<<<<< HEAD
                   <input type="number" class="form-control" id="booking" min="10" max="1440" placeholder="ex: every 60 mins">  
+=======
+                  <input type="number" class="form-control" id="booking" min="30" max="1440"
+                    placeholder="ex: every 60 mins">
+>>>>>>> main
                 </div>
-                
+
               </div>
             </div>
           </div>
