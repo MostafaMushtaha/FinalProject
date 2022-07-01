@@ -23,15 +23,15 @@
           <div class="form-row row-1">
             <div class="fullname">
               <label for="first-name">First name</label>
-              <input type="text" class="form-control" id="first-name" placeholder="First name" required>
+              <input type="text" class="form-control" id="first-name" placeholder="First name" name="NurseFirstName" value="NurseFirstName" required>
             </div>
             <div class="fullname">
               <label for="middle-name">Middle name</label>
-              <input type="text" class="form-control" id="middle-name" placeholder="Middle name" required>
+              <input type="text" class="form-control" id="middle-name" placeholder="Middle name" name="NurseMiddleName" value="NurseMiddleName" required>
             </div>
             <div class="fullname">
               <label for="last-name">Last name</label>
-              <input type="text" class="form-control" id="last-name" placeholder="Last name" required>
+              <input type="text" class="form-control" id="last-name" placeholder="Last name" name="NurseLastName" value="NurseLastName" required>
             </div>
           </div>
 
@@ -39,7 +39,7 @@
           <div class="form-row row-1">
             <div class="birth">
               <label for="birthdate">Birthdate</label>
-              <input type='date' class="form-control birth-input" id="birthdate" required>
+              <input type='date' class="form-control birth-input" id="birthdate" name="NurseBirthDate" value="NurseBirthDate" required>
             </div>
 
             <div class="gender">
@@ -65,12 +65,12 @@
           <div class="form-row row-1">
             <div class="email">
               <label for="email">Email address</label>
-              <input type="email" class="form-control" id="email" placeholder="Name@example.com" required>
+              <input type="email" class="form-control" id="email" placeholder="Name@example.com" name="NurseMail" value="NurseMail" required>
             </div>
 
             <div class="phone">
               <label for="phone">Phone number</label>
-              <input type="tel" class="form-control" id="phone" pattern="^01[0-2,5]{1}[0-9]{8}$"
+              <input type="tel" class="form-control" id="phone" pattern="^01[0-2,5]{1}[0-9]{8}$" name="NurseNumber" value="NurseNumber"
                 placeholder="Vodafone/Etisalat/Orange/We" required>
             </div>
           </div>
@@ -78,7 +78,7 @@
           <div class="form-inline row-1">
             <div class="password">
               <label for="passowrd">Password</label>
-              <input type="password" class="form-control" id="password" placeholder="Password" minlength="8"
+              <input type="password" class="form-control" id="password" placeholder="Password" minlength="8" name="NursePass" value="NursePass"
                 maxlength="20" aria-describedby="passwordHelpBlock">
               <small id="password" class="text-muted">
                 Must be 8-20 characters long.
@@ -100,7 +100,7 @@
           <div class="form-row row-2">
             <div class="title">
               <label for="title">Title</label>
-              <select class="form-control center-select" id="title" multiple size="3" required>
+              <select class="form-control center-select" id="title" multiple size="3" name="NurseTitle" value="NurseTitle" required>
                 <option>Certified Nursing Assistant</option>
                 <option>Licensed Practical Nurse</option>
                 <option>Registered Nurse</option>
@@ -117,7 +117,7 @@
           <div class="form-row row-2">
             <div class="specialist">
               <label for="specialist">Specialist</label>
-              <select class="form-control center-select" id="specialist" multiple size="3" required>
+              <select class="form-control center-select" id="specialist" multiple size="3" name="NurseSpec" value="NurseSpec" required>
                 <option>Cardiac Nurse</option>
                 <option>Certified Registered Nurse Anesthetist</option>
                 <option>Clinical Nurse Specialist</option>
@@ -152,7 +152,7 @@
           <div class="form-row row-1">
             <div class="experience">
               <label for="experience">Years of Experience</label>
-              <input type="number" class="form-control" id="experience" min="1" max="100"
+              <input type="number" class="form-control" id="experience" min="1" max="100" name="NurseYOE" value="NurseYOE"
                 placeholder="From 1 year to 100 years">
             </div>
           </div>
@@ -164,7 +164,7 @@
           <div class="form-row row-1">
             <div class="city">
               <label for="city">City</label>
-              <select class="form-control center-select" id="city" required>
+              <select class="form-control center-select" id="city" name="NurseCity" value="NurseCity" required>
                 <option class="disabled-select" selected="true" disabled>All cities</option>
                 <option>10th of Ramadan</option>
                 <option>15th of May</option>
@@ -234,7 +234,7 @@
             </div>
             <div class="area">
               <label for="area">Area</label>
-              <select class="form-control center-select" id="area" required>
+              <select class="form-control center-select" id="area" name="NurseArea" value="NurseArea" required>
                 <option class="disabled-select" selected="true" disabled>Choose city first</option>
                 <option>1</option>
                 <option>2</option>
@@ -248,7 +248,7 @@
           <div class="form-row row-1">
             <div class="fees">
               <label for="fees">Fees/Hr</label>
-              <input class="form-control" type="number" id="fees" min="0" max="1000" placeholder="Egyptian Pound "
+              <input class="form-control" type="number" id="fees" min="0" max="1000" placeholder="Egyptian Pound " name="NurseFees" value="NurseFees"
                 required>
             </div>
 
