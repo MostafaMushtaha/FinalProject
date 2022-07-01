@@ -22,15 +22,15 @@
         <div class="form-row row-1">
           <div class="fullname">
             <label for="first-name">First name</label>
-            <input type="text" class="form-control" id="first-name" placeholder="First name" required>
+            <input type="text" class="form-control" id="first-name" placeholder="First name" name="PatientFirstName" value="PatientFirstName" required>
           </div>
           <div class="fullname">
             <label for="middle-name">Middle name</label>
-            <input type="text" class="form-control" id="middle-name" placeholder="Middle name" required>
+            <input type="text" class="form-control" id="middle-name" placeholder="Middle name" name="PatientMiddleName" value="PatientMiddleName" required>
           </div>
           <div class="fullname">
             <label for="last-name">Last name</label>
-            <input type="text" class="form-control" id="last-name" placeholder="Last name" required>
+            <input type="text" class="form-control" id="last-name" placeholder="Last name" name="PatientLastName" value="PatientLastName" required>
           </div>
         </div>
 
@@ -38,7 +38,7 @@
         <div class="form-row row-2">
           <div class="birth">
             <label for="birthdate">Birthdate</label>
-            <input type='date' class="form-control birth-input" id="birthdate" required>
+            <input type='date' class="form-control birth-input" id="birthdate" name="PatientBDate" value="PatientBDate" required>
           </div>
 
           <div class="gender">
@@ -64,12 +64,12 @@
         <div class="form-row row-3">
           <div class="email">
             <label for="email">Email address</label>
-            <input type="email" class="form-control" id="email" placeholder="Name@example.com" required>
+            <input type="email" class="form-control" id="email" placeholder="Name@example.com" name="PatientMail" value="PatientMail" required>
           </div>
 
           <div class="phone">
             <label for="phone">Phone number</label>
-            <input type="tel" class="form-control" id="phone" pattern="^01[0-2,5]{1}[0-9]{8}$"
+            <input type="tel" class="form-control" id="phone" pattern="^01[0-2,5]{1}[0-9]{8}$" name="PatientNumber" value="DocLocation"
               placeholder="Vodafone/Etisalat/Orange/We" required>
           </div>
         </div>
@@ -77,7 +77,7 @@
         <div class="form-row row-4">
           <div class="city">
             <label for="city">City</label>
-            <select class="form-control" id="city" required>
+            <select class="form-control" id="city" name="PatientCity" value="PatientCity" required>
               <option class="disabled-select" selected="true" disabled>All cities</option>
               <option>1</option>
               <option>2</option>
@@ -88,7 +88,7 @@
           </div>
           <div class="area">
             <label for="area">Area</label>
-            <select class="form-control" id="area" required>
+            <select class="form-control" id="area" name="PatientArea" value="PatientArea" required>
               <option class="disabled-select" selected="true" disabled>Choose city first</option>
               <option>1</option>
               <option>2</option>
@@ -99,14 +99,14 @@
           </div>
           <div class="area">
             <label for="street">Street</label>
-            <input type="text" class="form-control" id="street" placeholder="Street" required>
+            <input type="text" class="form-control" id="street" placeholder="Street" name="PatientStreet" value="PatientStreet" required>
           </div>
         </div>
 
         <div class="form-row row-5">
           <div class="password">
             <label for="passowrd">Password</label>
-            <input type="password" class="form-control" id="password" placeholder="Password" minlength="8"
+            <input type="password" class="form-control" id="password" placeholder="Password" minlength="8" name="PatientPass" value="PatientPass"
               maxlength="20" aria-describedby="passwordHelpBlock">
             <small id="passwordHelpInline" class="text-muted">
               Must be 8-20 characters long.
