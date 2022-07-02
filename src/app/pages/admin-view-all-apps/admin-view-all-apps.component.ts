@@ -9,22 +9,12 @@ export class AdminViewAllAppsComponent implements OnInit {
 
   constructor() { }
 
-  // userProf = 'Dr.'
-  // userName = 'testName'
-  // vistedPatient = 'testPatName'
-  // appDate = 'testDate'
-  // appTime = 'testTime'
+  userProf = 'Dr.'
+  userName = 'testName'
+  vistedPatient = 'testPatName'
+  appDate = 'testDate'
+  appTime = 'testTime'
   // appCount : count[] = [1,2,3];
-headers = [["Profession" , "Name" , "Patient" , "Date" , "Time"]]
-rows = [
-  {
-    "Profession" : "Dr.",
-    "Name" : "Ahmed",
-    "Patient" : "Mohamed",
-    "Date" : "1/1/1",
-    "Time" : "1:1:1"
-  }
-]
 
   ngOnInit(): void {
   }
