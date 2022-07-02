@@ -47,6 +47,8 @@ import { AdminViewAllDocsComponent } from 'src/app/pages/admin-view-all-docs/adm
 import { AdminViewAllNursesComponent } from 'src/app/pages/admin-view-all-nurses/admin-view-all-nurses.component';
 import { AdminViewAllPatComponent } from 'src/app/pages/admin-view-all-pat/admin-view-all-pat.component';
 import { AdminRegRequestsComponent } from 'src/app/pages/admin-reg-requests/admin-reg-requests.component';
+import { NavAdminComponent } from 'src/app/layout/nav-admin/nav-admin.component';
+import { NavLoggedInComponent } from 'src/app/layout/nav-logged-in/nav-logged-in.component';
 
 
 
@@ -57,6 +59,8 @@ import { AdminRegRequestsComponent } from 'src/app/pages/admin-reg-requests/admi
     HomeComponent,
     FooterComponent,
     NavbarComponent,
+    NavAdminComponent,
+    NavLoggedInComponent,
     IndexOfPipe,
     AboutUsComponent,
     InsuranceSelectorComponent,
