@@ -29,15 +29,12 @@ import { SignUpComponent } from '../../pages/sign-up/sign-up.component';
 import { PanelModule } from 'primeng/panel'
 import { ForgetPassComponent } from 'src/app/pages/forget-pass/forget-pass.component';
 import { LoginComponent } from 'src/app/pages/login/login.component';
-import { VideoCallComponent } from 'src/app/pages/video-call/video-call.component';
-import { Home2Component } from 'src/app/pages/home2/home2.component';
+import { InsuranceHomeComponent } from 'src/app/pages/insurance-home/insurance-home.component';
 import { PatientSignUpComponent } from 'src/app/pages/patient-sign-up/patient-sign-up.component';
 import { NurseSignUpComponent } from 'src/app/pages/nurse-sign-up/nurse-sign-up.component';
 import { DoctorSignUpOneComponent } from 'src/app/pages/doctor-sign-up-one/doctor-sign-up-one.component';
 import { RadioButtonModule } from 'primeng/radiobutton'
 import { Patient2Component } from 'src/app/pages/patient2/patient2.component';
-import { DocSignup2Component } from 'src/app/pages/doc-signup2/doc-signup2.component';
-import { NurseSignup2Component } from 'src/app/pages/nurse-signup2/nurse-signup2.component';
 import { SearchResultsComponent } from 'src/app/pages/search-results/search-results.component';
 import { DoctorProfileComponent } from 'src/app/pages/doctor-profile/doctor-profile.component';
 import { PatientProfileComponent } from 'src/app/pages/patient-profile/patient-profile.component';
@@ -63,14 +60,10 @@ import { NurseEditProfileComponent } from 'src/app/pages/nurse-edit-profile/nurs
     SignUpComponent,
     ForgetPassComponent,
     LoginComponent,
-    VideoCallComponent,
-    Home2Component,
     PatientSignUpComponent,
     NurseSignUpComponent,
     DoctorSignUpOneComponent,
     Patient2Component,
-    DocSignup2Component,
-    NurseSignup2Component,
     SearchResultsComponent,
     DoctorProfileComponent,
     PatientProfileComponent,
@@ -78,6 +71,7 @@ import { NurseEditProfileComponent } from 'src/app/pages/nurse-edit-profile/nurs
     PatientEditProfileComponent,
     DoctorEditProfileComponent,
     NurseEditProfileComponent,
+    InsuranceHomeComponent,
   ],
   imports: [
     FormsModule,
