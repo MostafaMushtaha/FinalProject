@@ -28,18 +28,56 @@
 
     <div class="second-div-search">
       <div class="search-selection">
-        <select class="form-select specialty" name="SpecialitySearch" aria-label="">
+        <select class="form-select specialty" name="SpecialitySearch" id="SpecialitySearch">
           <option value="AllSpecialties" selected>All Specialties</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
+  
+          <!--Doctor-->
+          <option>Otolaryngologist</option>
+          <option>Dentist</option>
+          <option>Pulmonologist</option>
+          <option>Gynecologist</option>
+          <option>Cardiologist & Vascular Diseases</option>
+          <option>Hepatologist</option>
+          <option>Neurologist</option>
+          <option>Dermatologist</option>
+          <option>Nutritionist</option>
+          <option>Geriatricians</option>
+          <option>Endocrinologist</option>
+          <option>Allergist & Immunologist</option>
+          <option>Ophthalmologist</option>
+          <option>Oncologist</option>
+          <option>Gastroenterologist</option>
+          <option>Phoniatrics</option>
+          <option>Physiotherapist</option>
+          <option>Psychiatrist</option>
+          <option>Plastic Surgeon</option>
+          <option>Urologist</option>
+
+          
+          <!--Nurse-->
+          <option>Cardiac Nurse</option>
+          <option>Certified Registered Nurse Anesthetist</option>
+          <option>Clinical Nurse Specialist</option>
+          <option>Critical Care Nurse</option>
+          <option>Family Nurse Practitioner</option>
+          <option>Geriatric Nursing</option>
+          <option>Perioperative Nurse</option>
+          <option>Mental Health Nurse</option>
+          <option>Oncology Nurse</option>
+          <option>Orthopedic Nurse</option>
+          <option>Pediatric Nurse</option>
+          <option>Public Health Nurse</option>
+          <option>Travel Nurse</option>
+
         </select>
-        <select class="form-select city" name="CitySearch" aria-label="">
+
+        <select class="form-select city" id="City" name="City">
           <option value="AllCities" selected="true">All cities</option>
           <option value="Alexandria">Alexandria</option>
           <option value="Aswan">Aswan</option>
           <option value="Asyut">Asyut</option>
-          <option value="Beni Suef">Beni Suef</option>
+          <option value="Beheira">Beheira</option>
+          <option value="Beni-Suef">Beni Suef</option>
           <option value="Cairo">Cairo</option>
           <option value="Dakahlia">Dakahlia</option>
           <option value="Damietta">Damietta</option>
@@ -47,16 +85,135 @@
           <option value="Gharbia">Gharbia</option>
           <option value="Giza">Giza</option>
           <option value="Ismailia">Ismailia</option>
-          <option value="Kafr El Sheikh">Kafr El Sheikh</option>
+          <option value="KafrElSheikh">Kafr El Sheikh</option>
           <option value="Luxor">Luxor</option>
+          <option value="Matruh">Matruh</option>
+          <option value="Minya">Minya</option>
+          <option value="Monufia">Monufia</option>
+          <option value="NewValley">New Valley</option>
+          <option value="NorthSinai">North Sinai</option>
+          <option value="PortSaid">Port Said</option>
+          <option value="Qalyubia">Qalyubia</option>
+          <option value="Qena">Qena</option>
+          <option value="RedSea ">Red Sea </option>
+          <option value="Sharqia">Sharqia</option>
+          <option value="Sohag">Sohag</option>
+          <option value="SouthSinai">South Sinai</option>
           <option value="Suez">Suez</option>
-          <option value="Port said">Port said</option>
         </select>
-        <select class="form-select area" name="AreaSearch" aria-label="">
-          <option selected>All Areas</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
+        
+        <select class="form-select area" id="Area" name="Area">
+          <option selected="true">All Areas</option>
+
+          <option value="Anfoushi">Anfoushi</option>
+          <option value="Asafra">Asafra</option>
+          <option value="Azarita">Azarita</option>
+
+          <option value="Daraw">Daraw</option>
+          <option value="Edfu">Edfu</option>
+          <option value="NewAswan">New Aswan</option>
+
+          <option value="Abnub">Abnub</option>
+          <option value="AbuTig">Abu Tig</option>
+          <option value="Asyut">Asyut</option>
+
+          <option value="Edku">Edku</option>
+          <option value="Damanhur">Damanhur</option>
+          <option value="El Denlengat">El Denlengat</option>
+
+          <option value="Biba">Biba</option>
+          <option value="Ihnasiya">Ihnasiya</option>
+          <option value="NewBeniSuef">New Beni Suef</option>
+
+          <option value="New cairo">New cairo</option>
+          <option value="Nasr city">Nasr city</option>
+          <option value="El Rehab">El Rehab</option>
+          <option value="Zamalek">Zamalek</option>
+          <option value="MasrElGdeda">Masr Elgdeda</option>
+          <option value="El Rehab">Zeitoun</option>
+
+          <option value="Aga">Aga</option>
+          <option value="Bilqas">Bilqas</option>
+          <option value="Damas">Damas</option>
+
+          <option value="DamiRasElBar">Dami Ras El Bar</option>
+          <option value="ElRahamnah">El Rahamnah </option>
+          <option value="Siege of Damietta ">Siege of Damietta </option>
+
+          <option value="Ibsheway">Ibsheway</option>
+          <option value="Sinnuris">Sinnuris</option>
+          <option value="Markaz">Markaz</option>
+
+          <option value="Tanta">Tanta</option>
+          <option value="Kotoor">Kotoor</option>
+          <option value="Basyoun">Basyoun</option>
+
+          <option value="Dokki">Dokki</option>
+          <option value="El-Haram">El-Haram</option>
+          <option value="Agouza">Agouza</option>
+          <option value="El Sheikh Zayed">El Sheikh Zayed</option>
+          <option value="6th of October">6th of October</option>
+          <option value="Bulaq">Bulaq</option>
+
+          <option value="TellElKebir">Tell El Kebir</option>
+          <option value="AbuSuwir">Abu Suwir</option>
+          <option value="Fayid">Fayid</option>
+
+          <option value="Al-Burulus">Al-Burulus</option>
+          <option value="Metoubes">Metoubes</option>
+          <option value="KafrAsh-Shaykh">Kafr ash-Shaykh</option>
+
+          <option value="Qurna">Qurna</option>
+          <option value="Esna">Esna</option>
+          <option value="Tiba">Tiba</option>
+
+          <option value="El Dabaa">El Dabaa</option>
+          <option value="El Alamein">El Alamein</option>
+          <option value="El Alamein">El Alamein</option>
+
+          <option value="New Minya">New Minya</option>
+          <option value="Beni Mazar">Beni Mazar</option>
+          <option value="Deir Mawas">Deir Mawas</option>
+
+          <option value="Shibin El Kom">Shibin El Kom</option>
+          <option value="Menouf">Menouf</option>
+          <option value="Ashmoun">Ashmoun</option>
+
+          <option value="Kharga">Kharga</option>
+          <option value="Balat">Balat</option>
+          <option value="Dakhla">Dakhla</option>
+
+          <option value="El Arish">El Arish</option>
+          <option value="Nekhel">Nekhel</option>
+          <option value="Rafah">Rafah</option>
+
+          <option value="Al-Zohour">Al-Zohour</option>
+          <option value="Al-Dawahy">Al-Dawahy</option>
+          <option value="Al-Sharq">Al-Sharq</option>
+
+          <option value="Qift">Qift</option>
+          <option value="Nag Hammadi">Nag Hammadi</option>
+          <option value="Dishna">Dishna</option>
+
+          <option value="Hurghada">Hurghada</option>
+          <option value="Shalateen">Shalateen</option>
+          <option value="Marsa Alam">Marsa Alam</option>
+
+          <option value="Bilbeis">Bilbeis</option>
+          <option value="Zagazig">Zagazig</option>
+          <option value="Faqous">Faqous</option>
+
+          <option value="Dar El Salam">Dar El Salam</option>
+          <option value="El Balyana">El Balyana</option>
+          <option value="El Mansha">El Mansha</option>
+
+          <option value="Dahab">Dahab</option>
+          <option value="Nuweiba">Nuweiba</option>
+          <option value="Saint Catherine">Saint Catherine</option>
+
+          <option value="Ataqqa">Ataqqa</option>
+          <option value="Ganayen">Ganayen</option>
+          <option value="Arba'een">Arba'een</option>
         </select>
       </div>
 
@@ -64,11 +221,11 @@
         <div class="profession-selection">
           <p class="profession">Profession </p>
           <div class="form-check form-check-inline">
-            <input class="form-check-input doctor" checked type="checkbox" id="doctor" name="DoctorSearch" value="doctor">
-            <label class="form-check-label doctor-label" for="doctor">Doctor</label>
+            <input class="form-check-input doctor" checked type="checkbox" id="DoctorSearch" name="DoctorSearch" value="doctor">
+            <label class="form-check-label doctor-label" for="DoctorSearch">Doctor</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input nurse" type="checkbox" id="nurse" name="NurseSearch" value="nurse">
+            <input class="form-check-input nurse" type="checkbox" id="NurseSearch" name="NurseSearch" value="nurse">
             <label class="form-check-label nurse-label" for="nurse">Nurse</label>
           </div>
         </div>
@@ -76,12 +233,12 @@
         <div class="gender-selection">
           <p class="gender">Gender</p>
           <div class="form-check form-check-inline">
-            <input class="form-check-input male" checked type="checkbox" id="male" name="MaleSearch" value="male">
-            <label class="form-check-label male-label" for="male">Male</label>
+            <input class="form-check-input male" checked type="checkbox" id="MaleSearch" name="MaleSearch" value="male">
+            <label class="form-check-label male-label" for="MaleSearch">Male</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input female" checked type="checkbox" id="female" name="FemaleSearch" value="female">
-            <label class="form-check-label female-label" for="female">Female</label>
+            <input class="form-check-input female" checked type="checkbox" id="FemaleSearch" name="FemaleSearch" value="female">
+            <label class="form-check-label female-label" for="FemaleSearch">Female</label>
           </div>
         </div>
 
@@ -103,7 +260,7 @@
     <div class="third-div-search">
       <div class="search">
         <i class="pi pi-search"></i>
-        <input type="text" name="DoctorNurseNameSearch" value="" class="form-control" placeholder="Search by Name...">
+        <input type="text" id="DoctorNurseNameSearch" name="DoctorNurseNameSearch" value="" class="form-control" placeholder="Search by Name...">
         <a href="http://localhost:4200/#/search-results"><button type="submit" class="btn btn-success">Search</button></a>        
       </div>
     </div>
@@ -1233,6 +1390,5 @@
   </div>
   <hr class="social-media-line">
 </div>
-
 
 <!--Footer-->
