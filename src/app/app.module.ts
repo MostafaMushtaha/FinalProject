@@ -11,9 +11,11 @@ import { DropdownModule } from 'primeng/dropdown';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { RippleModule } from 'primeng/ripple';
 
+
 @NgModule({
   declarations: [
     AppComponent,
+
 
   ],
   imports: [
