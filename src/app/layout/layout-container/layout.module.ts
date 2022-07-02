@@ -49,6 +49,8 @@ import { AdminViewAllPatComponent } from 'src/app/pages/admin-view-all-pat/admin
 import { AdminRegRequestsComponent } from 'src/app/pages/admin-reg-requests/admin-reg-requests.component';
 import { NavAdminComponent } from 'src/app/layout/nav-admin/nav-admin.component';
 import { NavLoggedInComponent } from 'src/app/layout/nav-logged-in/nav-logged-in.component';
+import { ViewQuoteComponent } from 'src/app/pages/view-quote/view-quote.component';
+
 
 
 
@@ -84,6 +86,7 @@ import { NavLoggedInComponent } from 'src/app/layout/nav-logged-in/nav-logged-in
     AdminViewAllNursesComponent,
     AdminViewAllPatComponent,
     AdminRegRequestsComponent,
+    ViewQuoteComponent,
   ],
   imports: [
     FormsModule,

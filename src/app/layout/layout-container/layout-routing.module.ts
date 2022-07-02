@@ -24,6 +24,8 @@ import { AdminViewAllDocsComponent } from 'src/app/pages/admin-view-all-docs/adm
 import { AdminViewAllNursesComponent } from 'src/app/pages/admin-view-all-nurses/admin-view-all-nurses.component';
 import { AdminViewAllPatComponent } from 'src/app/pages/admin-view-all-pat/admin-view-all-pat.component';
 import { AdminRegRequestsComponent } from 'src/app/pages/admin-reg-requests/admin-reg-requests.component';
+import { ViewQuoteComponent } from 'src/app/pages/view-quote/view-quote.component';
+
 
 
 
@@ -53,6 +55,7 @@ const routes: Routes = [
       { path: 'admin-view-all-nurses', component: AdminViewAllNursesComponent },
       { path: 'admin-view-all-pat', component: AdminViewAllPatComponent },
       { path: 'admin-reg-requests', component: AdminRegRequestsComponent },
+      { path: 'view-quote', component: ViewQuoteComponent },
       { path: '', redirectTo: 'home', pathMatch: 'full' }
     ],
   }
