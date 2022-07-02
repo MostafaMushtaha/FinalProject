@@ -90,10 +90,15 @@
   color: green;
 }
 
+.edit-btn-anchor {
+  text-decoration: none;
+}
+
 .edit-btn {
   display: block;
   margin: 1.5rem auto 0.5rem;
   padding: 0.5rem 3rem;
+  text-decoration: none;
 }
 
 .edit-btn:hover {
