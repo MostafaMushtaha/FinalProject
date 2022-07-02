@@ -26,7 +26,11 @@ export class LayoutComponent implements OnInit {
       });
   }
 
+  userTypeCheck:boolean;
+
+
   ngOnInit(): void {
+
   }
 
 }

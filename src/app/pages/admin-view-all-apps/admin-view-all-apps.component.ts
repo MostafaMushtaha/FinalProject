@@ -9,6 +9,13 @@ export class AdminViewAllAppsComponent implements OnInit {
 
   constructor() { }
 
+  userProf = 'Dr.'
+  userName = 'testName'
+  vistedPatient = 'testPatName'
+  appDate = 'testDate'
+  appTime = 'testTime'
+  // appCount : count[] = [1,2,3];
+
   ngOnInit(): void {
   }
 
