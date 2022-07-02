@@ -10,6 +10,8 @@ import { NgOtpInputModule } from 'ng-otp-input';
 import { DropdownModule } from 'primeng/dropdown';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { RippleModule } from 'primeng/ripple';
+import { NavAdminComponent } from './layout/nav-admin/nav-admin.component';
+import { NavLoggedInComponent } from './layout/nav-logged-in/nav-logged-in.component';
 
 
 @NgModule({
