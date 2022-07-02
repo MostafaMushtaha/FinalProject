@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-doctor-sign-up-one',
-  templateUrl: './doctor-sign-up-one.component.html',
-  styleUrls: ['./doctor-sign-up-one.component.scss']
+  templateUrl: './doctor-sign-up.component.html',
+  styleUrls: ['./doctor-sign-up.component.scss']
 })
-export class DoctorSignUpOneComponent implements OnInit {
+export class DoctorSignUpComponent implements OnInit {
 
   dates: Date[];
   rangeDates: Date[];

@@ -10,7 +10,7 @@ import { LoginComponent } from 'src/app/pages/login/login.component';
 import { ForgetPassComponent } from 'src/app/pages/forget-pass/forget-pass.component';
 import { PatientSignUpComponent } from 'src/app/pages/patient-sign-up/patient-sign-up.component';
 import { NurseSignUpComponent } from 'src/app/pages/nurse-sign-up/nurse-sign-up.component';
-import { DoctorSignUpOneComponent } from 'src/app/pages/doctor-sign-up-one/doctor-sign-up-one.component';
+import { DoctorSignUpComponent } from 'src/app/pages/doctor-sign-up/doctor-sign-up.component';
 import { SearchResultsComponent } from 'src/app/pages/search-results/search-results.component';
 import { DoctorProfileComponent } from 'src/app/pages/doctor-profile/doctor-profile.component';
 import { PatientProfileComponent } from 'src/app/pages/patient-profile/patient-profile.component';
@@ -35,7 +35,7 @@ const routes: Routes = [
       { path: 'patient-signup', component: PatientSignUpComponent },
       { path: 'insurance-selector', component: InsuranceSelectorComponent },
       { path: 'nurse-signup', component: NurseSignUpComponent },
-      { path: 'doctor-signup', component: DoctorSignUpOneComponent },
+      { path: 'doctor-signup', component: DoctorSignUpComponent },
       { path: 'search-results', component: SearchResultsComponent },
       { path: 'doctor-profile', component: DoctorProfileComponent },
       { path: 'patient-profile', component: PatientProfileComponent },
