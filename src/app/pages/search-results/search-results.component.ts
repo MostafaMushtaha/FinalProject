@@ -7,6 +7,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchResultsComponent implements OnInit {
 
+  /*Radio*/
+  Star1Rate:'';
+  Star2Rate:'';
+  Star3Rate:'';
+  Star4Rate:'';
+  Star5Rate:'';
+
+  /*Radio*/
+  MaleFilter:'';
+  FemaleFilter:'';
+  
+  /*Radio*/
+  Any:'';
+  LessThan100:'';
+  From100To200:'';
+  GreaterThan200:'';
+
+  /*Select*/
+  SortSearch:'';
+
   constructor() { }
 
   ngOnInit(): void {
