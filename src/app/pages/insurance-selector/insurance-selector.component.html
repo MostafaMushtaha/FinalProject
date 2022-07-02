@@ -3,36 +3,41 @@
     <div class="form-row row-1">
       <div class="insurer-company">
         <label for="insurer-company">Insurer Company</label>
-        <select class="form-control insurer-company-dropdown" id="insurer-company" size="4" required>
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
+        <select class="form-control insurer-company-dropdown" name="InsurerCompanyName" id="insurer-company" size="4"
+          required>
+          <option value="AXA">AXA</option>
+          <option value="Allianz">Allianz</option>
+          <option value="MetLife">MetLife</option>
+          <option value="MedRight">MedRight</option>
+          <option value="Amanleek">Amanleek</option>
+          <option value="Bupa">Bupa</option>
+          <option value="Misr life insurance">Misr life insurance</option>
+          <option value="Ministery of Health & Population">Ministery of Health & Population</option>
         </select>
       </div>
       <div class="payment-frequency">
         <label for="payment-frequency">Payment Frequency</label>
-        <select class="form-control payment-frequency-dropdown" id="payment-frequency" size="4" required>
-          <option>Monthly</option>
-          <option>Annual</option>
-          <option>Semi Annual</option>
-          <option>Quarterly</option>
+        <select class="form-control payment-frequency-dropdown" name="PaymentFrequency" id="payment-frequency" size="4"
+          required>
+          <option value="Monthly">Monthly</option>
+          <option value="Annual">Annual</option>
+          <option value="Semi Annual">Semi Annual</option>
+          <option value="Quarterly">Quarterly</option>
         </select>
       </div>
     </div>
     <div class="form-row row-2">
       <div class="premium-range">
         <label class="premium-range-label" for="premium-range">Premium Range</label>
-        <input class="premium-range-input" id="premium-range" type="range" value="0" min="0" max="10000"
-          oninput="this.nextElementSibling.value = this.value">
+        <input class="premium-range-input" id="premium-range" type="range" name="PremiumRange" value="0" min="0"
+          max="10000" oninput="this.nextElementSibling.value = this.value">
         <output>0</output>
         <span class="currency"> EGP</span>
       </div>
       <div class="deductible-range">
         <label class="deductible-range-label" for="deductible-range">Deductible Range</label>
-        <input class="deductible-range-input" id="deductible-range" type="range" value="0" min="0" max="10000"
-          oninput="this.nextElementSibling.value = this.value">
+        <input class="deductible-range-input" id="deductible-range" type="range" name="DeductibleRange" value="0"
+          min="0" max="10000" oninput="this.nextElementSibling.value = this.value">
         <output>0</output>
         <span class="currency"> EGP</span>
       </div>
@@ -42,47 +47,48 @@
     <div class="form-row row-3">
 
       <label class="benefits-label" for="Benefits">Benefits</label>
-
       <div>
-        <label class="form-check-label" for="inpatient">Inpatient <input class="form-check-input benefits-input"
-            type="checkbox" name="inpatient" id="inpatient" checked><span class="definition">(a patient who lives in
+        <label class="form-check-label" for="inpatient">Inpatient
+          <input onclick="return false;" class="form-check-input benefits-input" type="checkbox" name="Inpatient"
+            id="inpatient" checked><span class="definition">(a patient who lives in
             hospital while under treatment)</span></label>
       </div>
       <div>
-        <label class="form-check-label" for="outpatient">Outpatient <input class="form-check-input benefits-input"
-            type="checkbox" name="outpatient" id="outpatient"><span class="definition">(a patient who attends a hospital
+        <label class="form-check-label" for="outpatient">Outpatient
+          <input class="form-check-input benefits-input" type="checkbox" name="Outpatient" id="outpatient"><span
+            class="definition">(a patient who attends a hospital
             for treatment without staying there overnight.)</span></label>
       </div>
       <div>
         <label class="form-check-label" for="dental">Dental <input class="form-check-input benefits-input"
-            type="checkbox" name="dental" id="dental"><span class="definition">(relating to the teeth and gums. /
+            type="checkbox" name="Dental" id="dental"><span class="definition">(relating to the teeth and gums. /
             relating to dentistry.)</span></label>
       </div>
       <div>
         <label class="form-check-label" for="optical">Optical <input class="form-check-input benefits-input"
-            type="checkbox" name="optical" id="optical"><span class="definition">(will often cover eye exams, contact
+            type="checkbox" name="Optical" id="optical"><span class="definition">(will often cover eye exams, contact
             lenses, and eyeglass lenses and frames.)</span></label>
       </div>
       <div>
         <label class="form-check-label" for="chronic">Chronic <input class="form-check-input benefits-input"
-            type="checkbox" name="chronic" id="chronic"><span class="definition">(ongoing or long-term monitoring by
+            type="checkbox" name="Chronic" id="chronic"><span class="definition">(ongoing or long-term monitoring by
             consultations, examinations, check-ups, tests.)</span></label>
       </div>
       <div>
         <label class="form-check-label" for="well-being">Well Being <input class="form-check-input benefits-input"
-            type="checkbox" name="well-being" id="well-being"><span class="definition">(refers to being physically,
+            type="checkbox" name="WellBeing" id="well-being"><span class="definition">(refers to being physically,
             mentally, and emotionally healthy)</span></label>
       </div>
       <div>
         <label class="form-check-label" for="emergency-evacuation">Emergencey Evacuation <input
-            class="form-check-input benefits-input" type="checkbox" name="emergency-evacuation"
+            class="form-check-input benefits-input" type="checkbox" name="EmergencyEvacuation"
             id="emergency-evacuation"><span class="definition">(the transportation from one hospital to another in the
             case of serious illness or an injury that requires urgent treatment. It occurs only when the local hospital
             can't provide adequate treatment.)</span></label>
       </div>
       <div>
         <label class="form-check-label" for="emergency-repatration">Emergencey Repatration <input
-            class="form-check-input benefits-input" type="checkbox" name="emergency-repatration"
+            class="form-check-input benefits-input" type="checkbox" name="EmergencyRepatration"
             id="emergency-repatration"><span class="definition">(provide coverage for transportation of a traveler to
             the nearest adequate medical facility in the event of a medical emergency during their trip. Repatriation
             can transport a traveler's remains back home.)</span></label>
@@ -90,13 +96,117 @@
     </div>
 
     <div class="form-row row-4">
-      <input class="search-btn btn btn-primary" type="submit" value="Search">
+      <input class="search-btn btn btn-primary" name="SubmitInsuarnceSearch" type="submit" value="Search">
     </div>
 
   </form>
 </div>
 
 
-<div class="search-result">
-
+<div class="search-result table-responsive">
+  <table class="search-table">
+    <thead>
+      <tr>
+        <th colspan="1" scope="col">Insurer</th>
+        <th colspan="1" scope="col">Inpatient</th>
+        <th colspan="1" scope="col">Outpatient</th>
+        <th colspan="1" scope="col">Dental</th>
+        <th colspan="1" scope="col">Optical</th>
+        <th colspan="1" scope="col">Chronic</th>
+        <th colspan="1" scope="col">Well Being</th>
+        <th colspan="1" scope="col">Emergencey Evacuation</th>
+        <th colspan="1" scope="col">Emergencey Repatration</th>
+        <th colspan="1" scope="col">Annual Limit</th>
+        <th colspan="1" scope="col">Deductible</th>
+        <th colspan="1" scope="col">Premium</th>
+        <th colspan="1" scope="col">View Quote</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><img class="insurer-img" src="https://i.imgur.com/sQCRLhS.png"></td>
+        <td><img class="insurer-benefit-available" src="https://i.imgur.com/zktu2iv.png"></td>
+        <td><img class="insurer-benefit-unavailable" src="https://i.imgur.com/9xOeTpe.png"></td>
+        <td><img class="insurer-benefit-available" src="https://i.imgur.com/zktu2iv.png"></td>
+        <td><img class="insurer-benefit-unavailable" src="https://i.imgur.com/9xOeTpe.png"></td>
+        <td><img class="insurer-benefit-available" src="https://i.imgur.com/zktu2iv.png"></td>
+        <td><img class="insurer-benefit-unavailable" src="https://i.imgur.com/9xOeTpe.png"></td>
+        <td><img class="insurer-benefit-unavailable" src="https://i.imgur.com/9xOeTpe.png"></td>
+        <td><img class="insurer-benefit-unavailable" src="https://i.imgur.com/9xOeTpe.png"></td>
+        <td>
+          <p class="annual-limit-price">220,000</p>
+        </td>
+        <td><select class="form-control deductible-price" id="" name="DeductiblePrice">
+            <option value="0">0</option>
+          </select></td>
+        <td>
+          <p class="premium-price">1,500 <span class="egy-month">EGP/Month</span></p>
+        </td>
+        <td><a href=""><button type="button" name="ViewQuote" class="btn btn-primary view-btn">View</button></a></td>
+      </tr>
+      <tr>
+        <td><img class="insurer-img" src="https://i.imgur.com/Ss5wQn4.png"></td>
+        <td><img class="insurer-benefit-available" src="https://i.imgur.com/zktu2iv.png"></td>
+        <td><img class="insurer-benefit-unavailable" src="https://i.imgur.com/9xOeTpe.png"></td>
+        <td><img class="insurer-benefit-available" src="https://i.imgur.com/zktu2iv.png"></td>
+        <td><img class="insurer-benefit-unavailable" src="https://i.imgur.com/9xOeTpe.png"></td>
+        <td><img class="insurer-benefit-available" src="https://i.imgur.com/zktu2iv.png"></td>
+        <td><img class="insurer-benefit-unavailable" src="https://i.imgur.com/9xOeTpe.png"></td>
+        <td><img class="insurer-benefit-unavailable" src="https://i.imgur.com/9xOeTpe.png"></td>
+        <td><img class="insurer-benefit-unavailable" src="https://i.imgur.com/9xOeTpe.png"></td>
+        <td>
+          <p class="annual-limit-price">220,000</p>
+        </td>
+        <td><select class="form-control deductible-price" id="" name="DeductiblePrice">
+            <option value="0">0</option>
+          </select></td>
+        <td>
+          <p class="premium-price">1,500 <span class="egy-month">EGP/Month</span></p>
+        </td>
+        <td><a href=""><button type="button" name="ViewQuote" class="btn btn-primary view-btn">View</button></a></td>
+      </tr>
+      <tr>
+        <td><img class="insurer-img" src="https://i.imgur.com/4xvKz2e.png"></td>
+        <td><img class="insurer-benefit-available" src="https://i.imgur.com/zktu2iv.png"></td>
+        <td><img class="insurer-benefit-unavailable" src="https://i.imgur.com/9xOeTpe.png"></td>
+        <td><img class="insurer-benefit-available" src="https://i.imgur.com/zktu2iv.png"></td>
+        <td><img class="insurer-benefit-unavailable" src="https://i.imgur.com/9xOeTpe.png"></td>
+        <td><img class="insurer-benefit-available" src="https://i.imgur.com/zktu2iv.png"></td>
+        <td><img class="insurer-benefit-unavailable" src="https://i.imgur.com/9xOeTpe.png"></td>
+        <td><img class="insurer-benefit-unavailable" src="https://i.imgur.com/9xOeTpe.png"></td>
+        <td><img class="insurer-benefit-unavailable" src="https://i.imgur.com/9xOeTpe.png"></td>
+        <td>
+          <p class="annual-limit-price">220,000</p>
+        </td>
+        <td><select class="form-control deductible-price" id="" name="DeductiblePrice">
+            <option value="0">0</option>
+          </select></td>
+        <td>
+          <p class="premium-price">1,500 <span class="egy-month">EGP/Month</span></p>
+        </td>
+        <td><a href=""><button type="button" name="ViewQuote" class="btn btn-primary view-btn">View</button></a></td>
+      </tr>
+      <tr>
+        <td><img class="insurer-img" src="https://i.imgur.com/jC3jcpW.png"></td>
+        <td><img class="insurer-benefit-available" src="https://i.imgur.com/zktu2iv.png"></td>
+        <td><img class="insurer-benefit-unavailable" src="https://i.imgur.com/9xOeTpe.png"></td>
+        <td><img class="insurer-benefit-available" src="https://i.imgur.com/zktu2iv.png"></td>
+        <td><img class="insurer-benefit-unavailable" src="https://i.imgur.com/9xOeTpe.png"></td>
+        <td><img class="insurer-benefit-available" src="https://i.imgur.com/zktu2iv.png"></td>
+        <td><img class="insurer-benefit-unavailable" src="https://i.imgur.com/9xOeTpe.png"></td>
+        <td><img class="insurer-benefit-unavailable" src="https://i.imgur.com/9xOeTpe.png"></td>
+        <td><img class="insurer-benefit-unavailable" src="https://i.imgur.com/9xOeTpe.png"></td>
+        <td>
+          <p class="annual-limit-price">220,000</p>
+        </td>
+        <td><select class="form-control deductible-price" id="" name="DeductiblePrice">
+            <option value="0">0</option>
+          </select></td>
+        <td>
+          <p class="premium-price">1,500 <span class="egy-month">EGP/Month</span></p>
+        </td>
+        <td><a href=""><button type="button" name="ViewQuote" class="btn btn-primary view-btn">View</button></a></td>
+      </tr>
+    </tbody>
+  </table>
 </div>

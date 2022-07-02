@@ -28,23 +28,35 @@
 
     <div class="second-div-search">
       <div class="search-selection">
-        <select class="form-select specialty" aria-label="">
-          <option class="select-option" selected>All Specialties</option>
-          <option class="select-option" value="1">One</option>
-          <option class="select-option" value="2">Two</option>
-          <option class="select-option" value="3">Three</option>
+        <select class="form-select specialty" name="SpecialitySearch" aria-label="">
+          <option value="AllSpecialties" selected>All Specialties</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
         </select>
-        <select class="form-select city" aria-label="">
-          <option class="select-option" selected>All Cites</option>
-          <option class="select-option" value="1">One</option>
-          <option class="select-option" value="2">Two</option>
-          <option class="select-option" value="3">Three</option>
+        <select class="form-select city" name="CitySearch" aria-label="">
+          <option value="AllCities" selected="true">All cities</option>
+          <option value="Alexandria">Alexandria</option>
+          <option value="Aswan">Aswan</option>
+          <option value="Asyut">Asyut</option>
+          <option value="Beni Suef">Beni Suef</option>
+          <option value="Cairo">Cairo</option>
+          <option value="Dakahlia">Dakahlia</option>
+          <option value="Damietta">Damietta</option>
+          <option value="Faiyum">Faiyum</option>
+          <option value="Gharbia">Gharbia</option>
+          <option value="Giza">Giza</option>
+          <option value="Ismailia">Ismailia</option>
+          <option value="Kafr El Sheikh">Kafr El Sheikh</option>
+          <option value="Luxor">Luxor</option>
+          <option value="Suez">Suez</option>
+          <option value="Port said">Port said</option>
         </select>
-        <select class="form-select area" aria-label="">
-          <option class="select-option" selected>All Areas</option>
-          <option class="select-option" value="1">One</option>
-          <option class="select-option" value="2">Two</option>
-          <option class="select-option" value="3">Three</option>
+        <select class="form-select area" name="AreaSearch" aria-label="">
+          <option selected>All Areas</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
         </select>
       </div>
 
@@ -52,24 +64,24 @@
         <div class="profession-selection">
           <p class="profession">Profession </p>
           <div class="form-check form-check-inline">
-            <input class="form-check-input doctor" checked type="checkbox" id="inlineCheckbox3" value="option3">
-            <label class="form-check-label doctor-label" for="inlineCheckbox3">Doctor</label>
+            <input class="form-check-input doctor" checked type="checkbox" id="doctor" name="DoctorSearch" value="doctor">
+            <label class="form-check-label doctor-label" for="doctor">Doctor</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input nurse" type="checkbox" id="inlineCheckbox4" value="option4">
-            <label class="form-check-label nurse-label" for="inlineCheckbox4">Nurse</label>
+            <input class="form-check-input nurse" type="checkbox" id="nurse" name="NurseSearch" value="nurse">
+            <label class="form-check-label nurse-label" for="nurse">Nurse</label>
           </div>
         </div>
 
         <div class="gender-selection">
           <p class="gender">Gender</p>
           <div class="form-check form-check-inline">
-            <input class="form-check-input male" checked type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label male-label" for="inlineCheckbox1">Male</label>
+            <input class="form-check-input male" checked type="checkbox" id="male" name="MaleSearch" value="male">
+            <label class="form-check-label male-label" for="male">Male</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input female" checked type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label female-label" for="inlineCheckbox2">Female</label>
+            <input class="form-check-input female" checked type="checkbox" id="female" name="FemaleSearch" value="female">
+            <label class="form-check-label female-label" for="female">Female</label>
           </div>
         </div>
 
@@ -91,7 +103,7 @@
     <div class="third-div-search">
       <div class="search">
         <i class="pi pi-search"></i>
-        <input type="text" class="form-control" placeholder="Search by Name...">
+        <input type="text" name="DoctorNurseNameSearch" value="" class="form-control" placeholder="Search by Name...">
         <a href="http://localhost:4200/#/search-results"><button type="submit" class="btn btn-success">Search</button></a>        
       </div>
     </div>

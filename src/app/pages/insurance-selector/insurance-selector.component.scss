@@ -1,11 +1,10 @@
-
 .search-div {
   display: flex;
-  width: 40%;
+  width: 40rem;
   margin: 3rem auto;
   justify-content: space-evenly;
 
-  background-color: #EEEEEE;
+  background-color: #fff;
   border: 5px solid #F2F2F2;
   border-radius: 25px;
   box-shadow: rgb(0 0 0 / 29%) 0px 6px 18px 0px;
@@ -39,7 +38,7 @@
 }
 
 
-.insurer-company-dropdown::-webkit-scrollbar ,
+.insurer-company-dropdown::-webkit-scrollbar,
 .payment-frequency-dropdown::-webkit-scrollbar {
   display: none;
 }
@@ -105,4 +104,84 @@
 
 .search-btn:hover {
   box-shadow: rgb(0 0 0 / 29%) 0px 6px 18px 0px;
+}
+
+
+
+.search-result {
+  width: 95%;
+  height: 25.7rem;
+  overflow-y: auto;
+  margin: 1rem auto 4rem;
+  background-color: #EEEEEE;
+  border: 5px solid #F2F2F2;
+  border-radius: 30px;
+
+
+  box-shadow: rgb(0 0 0 / 29%) 0px 6px 18px 0px;
+
+}
+
+.search-result::-webkit-scrollbar {
+  display: none;
+}
+
+.search-table {
+  background-color: white;
+  width: 100%;
+
+}
+
+
+
+
+table {
+  border-collapse: collapse;
+}
+
+td,
+th {
+  text-align: center;
+  height: 5rem;
+  width: 7rem;
+}
+
+.basic-benefits {
+  width: 5rem;
+}
+
+.insurer-img {
+  width: 5rem;
+  height: auto;
+}
+
+.insurer-benefit-available,
+.insurer-benefit-unavailable {
+  width: 2.5rem;
+  height: auto;
+}
+
+
+.annual-limit-price {
+  margin-bottom: 0;
+  font-size: 1.1rem;
+}
+
+.deductible-price {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.premium-price {
+  margin-bottom: 0;
+  font-size: 1.2rem;
+}
+
+
+.egy-month{
+  font-size: 0.6rem;
+}
+.view-btn {
+  width: 5rem;
+  height: auto;
 }
