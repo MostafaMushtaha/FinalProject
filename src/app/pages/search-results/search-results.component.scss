@@ -216,13 +216,13 @@
 
 
 .title-nurse {
-    white-space: nowrap;
-    height: 18%;
-    overflow-y: auto;
-    overflow-x: hidden;
-  
-    border-top: 1px solid grey;
-    margin: 0;  
+  white-space: nowrap;
+  height: 18%;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  border-top: 1px solid grey;
+  margin: 0;
 }
 
 .title-list {
@@ -245,15 +245,15 @@
   margin: 0;
 }
 
-.specialist-nurse{
-    white-space: nowrap;
-    height: 5rem;
-    overflow-y: auto;
-    overflow-x: hidden;
-  
-    border-top: 1px solid grey;
-    margin: 0;
-  
+.specialist-nurse {
+  white-space: nowrap;
+  height: 5rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  border-top: 1px solid grey;
+  margin: 0;
+
 }
 
 .insurance-heading {
@@ -333,6 +333,15 @@
   color: green;
 }
 
+.star-rate-empty-filter {
+  font-size: 0.8rem;
+  color: black;
+}
+
+.star-rate-fill-filter {
+  font-size: 0.8rem;
+  color: orange;
+}
 
 
 /************ right side div ************/
@@ -439,14 +448,14 @@
 
 
 .search-result-pagination {
-    background-color: #e2e6ea;
-    justify-content: center;
-    margin: 0 auto;
-    padding-bottom: 1%;
+  background-color: #e2e6ea;
+  justify-content: center;
+  margin: 0 auto;
+  padding-bottom: 1%;
 }
 
 .pagination {
-    justify-content: center;
+  justify-content: center;
 }
 
 /******** Scrollbar ********/

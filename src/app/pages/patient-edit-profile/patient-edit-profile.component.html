@@ -5,13 +5,13 @@
     <div class="image-upload-div">
       <div class="image-upload">
         <label for="file-input">
-          Edit profile picture?
+          Upload profile picture?
         </label>
         <input id="file-input" type="file">
       </div>
     </div>
     <div class="submit">
-      <input class="submit-btn btn btn-primary" type="submit" value="Edit">
+      <input class="submit-btn btn btn-primary" type="submit" value="Register">
     </div>
   </div>
 
@@ -22,23 +22,25 @@
         <div class="form-row row-1">
           <div class="fullname">
             <label for="first-name">First name</label>
-            <input type="text" class="form-control" id="first-name" placeholder="First name" required>
+            <input type="text" class="form-control" id="first-name" placeholder="First name" name="PatientFirstName"
+              value="" required>
           </div>
           <div class="fullname">
             <label for="middle-name">Middle name</label>
-            <input type="text" class="form-control" id="middle-name" placeholder="Middle name" required>
+            <input type="text" class="form-control" id="middle-name" placeholder="Middle name" name="PatientMiddleName"
+              value="" required>
           </div>
           <div class="fullname">
             <label for="last-name">Last name</label>
-            <input type="text" class="form-control" id="last-name" placeholder="Last name" required>
+            <input type="text" class="form-control" id="last-name" placeholder="Last name" name="PatientLastName"
+              value="" required>
           </div>
         </div>
 
-
-        <div class="form-row row-2">
+        <div class="form-row row-1">
           <div class="birth">
             <label for="birthdate">Birthdate</label>
-            <input type='date' class="form-control birth-input" id="birthdate" required>
+            <input type='date' class="form-control birth-input" name="PatientBirth" value="" id="birthdate" required>
           </div>
 
           <div class="gender">
@@ -46,14 +48,14 @@
             <label class="form-check-label gender-label" for="gender">Gender</label>
 
             <div class="form-check male-check">
-              <input class="form-check-input male-check-circle" type="radio" name="gender" id="male">
+              <input class="form-check-input male-check-circle" type="radio" name="MaleGenderPatient" id="male">
               <label class="form-check-label" for="male">
                 <img class="gender-icon" src="https://i.imgur.com/7alkg7M.png" alt="Male-icon"> Male
               </label>
             </div>
 
             <div class="form-check female-check">
-              <input class="form-check-input female-check-circle" type="radio" name="gender" id="female">
+              <input class="form-check-input female-check-circle" type="radio" name="FemaleGenderPatient" id="female">
               <label class="form-check-label" for="female">
                 <img class="gender-icon" src="https://i.imgur.com/31PD7OW.png" alt="Female-icon"> Female
               </label>
@@ -61,58 +63,356 @@
           </div>
         </div>
 
-        <div class="form-row row-3">
+        <div class="form-row row-1">
           <div class="email">
             <label for="email">Email address</label>
-            <input type="email" class="form-control" id="email" placeholder="Name@example.com" required>
+            <input type="email" class="form-control" id="email" placeholder="Name@example.com" name="PatientMail"
+              value="" required>
           </div>
 
           <div class="phone">
             <label for="phone">Phone number</label>
-            <input type="tel" class="form-control" id="phone" pattern="^01[0-2,5]{1}[0-9]{8}$"
-              placeholder="Vodafone/Etisalat/Orange/We" required>
+            <input type="tel" class="form-control" id="phone" pattern="^01[0-2,5]{1}[0-9]{8}$" name="PatientNumber"
+              value="" placeholder="Vodafone/Etisalat/Orange/We" required>
           </div>
         </div>
 
-        <div class="form-row row-4">
+        <div class="form-row row-1">
           <div class="city">
             <label for="city">City</label>
-            <select class="form-control" id="city" required>
+            <select class="form-control" id="city" name="PatientCity" value="PatientCity" required>
               <option class="disabled-select" selected="true" disabled>All cities</option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+              <option class="disabled-select" value="AllCities" selected="true" disabled>All cities</option>
+              <option value="Alexandria">Alexandria</option>
+              <option value="Aswan">Aswan</option>
+              <option value="Asyut">Asyut</option>
+              <option value="Beni-Suef">Beni Suef</option>
+              <option value="Cairo">Cairo</option>
+              <option value="Dakahlia">Dakahlia</option>
+              <option value="Damietta">Damietta</option>
+              <option value="Faiyum">Faiyum</option>
+              <option value="Gharbia">Gharbia</option>
+              <option value="Giza">Giza</option>
+              <option value="Ismailia">Ismailia</option>
+              <option value="Kafr El Sheikh">Kafr El Sheikh</option>
+              <option value="Luxor">Luxor</option>
+              <option value="Suez">Suez</option>
+              <option value="Port-Said">Port said</option>
             </select>
           </div>
           <div class="area">
             <label for="area">Area</label>
-            <select class="form-control" id="area" required>
+            <select class="form-control" id="area" name="PatientArea" value="PatientArea" required>
               <option class="disabled-select" selected="true" disabled>Choose city first</option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+
+              <option value="Anfoushi">Anfoushi</option>
+              <option value="Asafra">Asafra</option>
+              <option value="Azarita">Azarita</option>
+
+              <option value="Daraw">Daraw</option>
+              <option value="Edfu">Edfu</option>
+              <option value="NewAswan">New Aswan</option>
+
+
+              <option value="Abnub">Abnub</option>
+              <option value="Abu ig">Abu Tig</option>
+              <option value="Asyut">Asyut</option>
+
+              <option value="Biba">Biba</option>
+              <option value="Ihnasiya">Ihnasiya</option>
+              <option value="NewBeniSuef">New Beni Suef</option>
+
+              <option value="New cairo">New cairo</option>
+              <option value="Nasr city">Nasr city</option>
+              <option value="El Rehab">El Rehab</option>
+
+              <option value="Aga">Aga</option>
+              <option value="Bilqas">Bilqas</option>
+              <option value="Damas">Damas</option>
+
+              <option value="DamiRasElBar">Dami Ras El Bar</option>
+              <option value="ElRahamnah">El Rahamnah </option>
+              <option value="Siege of Damietta ">Siege of Damietta </option>
+
+              <option value="Ibsheway">Ibsheway</option>
+              <option value="Sinnuris">Sinnuris</option>
+              <option value="Markaz">Markaz</option>
+
+              <option value="Tanta">Tanta</option>
+              <option value="Kotoor">Kotoor</option>
+              <option value="Basyoun">Basyoun</option>
+
+              <option value="Dokki">Dokki</option>
+              <option value="El-Haram">El-Haram</option>
+              <option value="Agouza">Agouza</option>
+
+              <option value="TellElKebir">Tell El Kebir</option>
+              <option value="AbuSuwir">Abu Suwir</option>
+              <option value="Fayid">Fayid</option>
+
+              <option value="Al-Burulus">Al-Burulus</option>
+              <option value="Metoubes">Metoubes</option>
+              <option value="KafrAsh-Shaykh">Kafr ash-Shaykh</option>
+
+              <option value="Qurna">Qurna</option>
+              <option value="Esna">Esna</option>
+              <option value="Tiba">Tiba</option>
+
+              <option value="Ataqqa">Ataqqa</option>
+              <option value="Ganayen">Ganayen</option>
+              <option value="Arba'een">Arba'een</option>
+
+              <option value="Al-Zohour">Al-Zohour</option>
+              <option value="Al-Dawahy">Al-Dawahy</option>
+              <option value="Al-Sharq">Al-Sharq</option>
+
             </select>
           </div>
-          <div class="area">
+
+          <div class="street">
             <label for="street">Street</label>
-            <input type="text" class="form-control" id="street" placeholder="Street" required>
+            <input type="text" class="form-control" id="street" placeholder="Street" name="PatientStreet" value=""
+              required>
           </div>
         </div>
 
-        <div class="form-row row-5">
+        <div class="form-row row-1">
           <div class="password">
             <label for="passowrd">Password</label>
             <input type="password" class="form-control" id="password" placeholder="Password" minlength="8"
-              maxlength="20" aria-describedby="passwordHelpBlock">
+              name="PatientPass" value="" maxlength="20" aria-describedby="passwordHelpBlock">
             <small id="passwordHelpInline" class="text-muted">
               Must be 8-20 characters long.
             </small>
           </div>
         </div>
+
+        <div class="form-row row-1">
+          <div class="blood-type">
+            <label for="blood-type">Blood Type</label>
+            <select class="form-control center-select" id="blood-type" size="3" required>
+              <option value="A+">A+</option>
+              <option value="O+">O+</option>
+              <option value="B+">B+</option>
+              <option value="AB+">AB+</option>
+              <option value="A-">A-</option>
+              <option value="O-">O-</option>
+              <option value="B-">B-</option>
+              <option value="AB-">AB-</option>
+            </select>
+          </div>
+
+          <div class="chronic-diseases">
+            <label for="chronic-diseases">Chronic Diseases</label>
+            <select class="form-control center-select" id="specialist" multiple size="3" required>
+              <option value="HeartDisease">Heart Disease</option>
+              <option value="Diabetes">Diabetes</option>
+              <option value="Cancer">Cancer</option>
+              <option value="HighBloodPressure">High Blood Pressure</option>
+              <option value="AlzheimerDiseases">Alzheimer Diseases</option>
+              <option value="COPD">Chronic Obstructive Pulmonary Disease</option>
+              <option value="Depression">Depression</option>
+              <option value="Asthma">Asthma</option>
+              <option value="Arthritis">Arthritis</option>
+              <option value="Osteoporosis">osteoporosis</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row row-5"><label class="form-check-label allergies-label" for="allergies">Allergies</label>
+        </div>
+        <div class="form-row row-4">
+
+          <div class="form-row row-3">
+            <div class="allergies">
+              <div class="form-check allergy-type">
+                <input class="form-check-input" type="checkbox" name="drug-allergy" id="drug-allergy">
+                <label class="form-check-label allergy-label" for="drug-allergy">
+                  Drug Allergy
+                </label>
+              </div>
+
+              <div class="allergy-details">
+                <input type="text" class="form-control" id="allergy-details" placeholder="ex. some Medication, etc.">
+              </div>
+
+            </div>
+          </div>
+          <div class="form-row row-3">
+            <div class="allergies">
+              <div class="form-check allergy-type">
+                <input class="form-check-input" type="checkbox" name="food-allergy" id="food-allergy">
+                <label class="form-check-label daallergy-typey-label" for="food-allergy">
+                  Food Allergy
+                </label>
+              </div>
+
+              <div class="allergy-details">
+                <input type="text" class="form-control" id="allergy-details"
+                  placeholder="ex. jelly, peanut butter, etc.">
+              </div>
+
+            </div>
+          </div>
+          <div class="form-row row-3">
+            <div class="allergies">
+              <div class="form-check allergy-type">
+                <input class="form-check-input" type="checkbox" name="insect-allergy" id="insect-allergy">
+                <label class="form-check-label allergy-type-label" for="insect-allergy">
+                  Insect Allergy
+                </label>
+              </div>
+
+              <div class="allergy-details">
+                <input type="text" class="form-control" id="allergy-details" placeholder="ex. bees, etc.">
+              </div>
+
+            </div>
+          </div>
+          <div class="form-row row-3">
+            <div class="allergies">
+              <div class="form-check allergy-type">
+                <input class="form-check-input" type="checkbox" name="latex-allergy" id="latex-allergy">
+                <label class="form-check-label allergy-type-label" for="latex-allergy">
+                  Latex Allergy
+                </label>
+              </div>
+
+              <div class="allergy-details">
+                <input type="text" class="form-control" id="allergy-details"
+                  placeholder="ex. natrual rubber latex, etc.">
+              </div>
+
+            </div>
+          </div>
+          <div class="form-row row-3">
+            <div class="allergies">
+              <div class="form-check allergy-type">
+                <input class="form-check-input" type="checkbox" name="mold-allergy" id="mold-allergy">
+                <label class="form-check-label allergy-type-label" for="mold-allergy">
+                  Mold Allergy
+                </label>
+              </div>
+
+              <div class="allergy-details">
+                <input type="text" class="form-control" id="allergy-details" placeholder="ex. fungi, etc.">
+              </div>
+
+            </div>
+          </div>
+          <div class="form-row row-3">
+            <div class="allergies">
+              <div class="form-check allergy-type">
+                <input class="form-check-input" type="checkbox" name="pet-allergy" id="pet-allergy">
+                <label class="form-check-label allergy-type-label" for="pet-allergy">
+                  Pet Allergy
+                </label>
+              </div>
+
+              <div class="allergy-details">
+                <input type="text" class="form-control" id="allergy-details" placeholder="ex. dogs, cats, etc.">
+              </div>
+
+            </div>
+          </div>
+          <div class="form-row row-3">
+            <div class="allergies">
+              <div class="form-check allergy-type">
+                <input class="form-check-input" type="checkbox" name="pollen-allergy" id="pollen-allergy">
+                <label class="form-check-label allergy-type-label" for="pollen-allergy">
+                  Pollen Allergy
+                </label>
+              </div>
+
+              <div class="allergy-details">
+                <input type="text" class="form-control" id="allergy-details" placeholder="ex. seasonal allergies, etc.">
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row row-5"><label class="form-check-label vaccination-label"
+            for="vaccination">Vaccination</label>
+        </div>
+        <div class="form-row row-2">
+          <div class="first-dose">
+
+            <div class="dose-type">
+              <label for="first-does">First dose</label>
+              <select class="form-control center-select" id="first-does" size="2" required>
+                <option value="N/A">N/A</option>
+                <option value="Pfizer">Pfizer</option>
+                <option value="Janssen">Janssen</option>
+                <option value="AstraZeneca">AstraZeneca</option>
+                <option value="Moderma">Moderma</option>
+                <option value="Sinopharm">Sinopharm</option>
+                <option value="Sinovac">Sinovac</option>
+                <option value="Covovax">Covovax</option>
+                <option value="Nuvaxvoid">Nuvaxvoid</option>
+              </select>
+            </div>
+
+            <div class="dose-date">
+              <label for="first-dose-date">Date</label>
+              <input class="form-control" type="date" name="first-dose-date" id="first-dose-date">
+            </div>
+
+          </div>
+        </div>
+
+        <div class="form-row row-2">
+          <div class="first-dose">
+
+            <div class="dose-type">
+              <label for="second-does">Second dose</label>
+              <select class="form-control center-select" id="second-does" size="2" required>
+                <option value="N/A">N/A</option>
+                <option value="Pfizer">Pfizer</option>
+                <option value="Janssen">Janssen</option>
+                <option value="AstraZeneca">AstraZeneca</option>
+                <option value="Moderma">Moderma</option>
+                <option value="Sinopharm">Sinopharm</option>
+                <option value="Sinovac">Sinovac</option>
+                <option value="Covovax">Covovax</option>
+                <option value="Nuvaxvoid">Nuvaxvoid</option>
+              </select>
+            </div>
+
+            <div class="dose-date">
+              <label for="second-dose-date">Date</label>
+              <input class="form-control" type="date" name="second-dose-date" id="second-dose-date">
+            </div>
+
+          </div>
+        </div>
+
+        <div class="form-row row-2">
+          <div class="third-dose">
+
+            <div class="dose-type">
+              <label for="third-does">Third dose</label>
+              <select class="form-control center-select" id="third-does" size="2" required>
+                <option value="N/A">N/A</option>
+                <option value="Pfizer">Pfizer</option>
+                <option value="Janssen">Janssen</option>
+                <option value="AstraZeneca">AstraZeneca</option>
+                <option value="Moderma">Moderma</option>
+                <option value="Sinopharm">Sinopharm</option>
+                <option value="Sinovac">Sinovac</option>
+                <option value="Covovax">Covovax</option>
+                <option value="Nuvaxvoid">Nuvaxvoid</option>
+              </select>
+            </div>
+
+            <div class="dose-date">
+              <label for="third-dose-date">Date</label>
+              <input class="form-control" type="date" name="third-dose-date" id="third-dose-date">
+            </div>
+
+          </div>
+        </div>
+
       </form>
     </div>
   </div>
