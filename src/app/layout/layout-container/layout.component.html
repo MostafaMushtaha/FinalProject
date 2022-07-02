@@ -1,8 +1,8 @@
-<app-navbar></app-navbar>
+<app-navbar *ngIf="true"></app-navbar>
 
-<app-nav-admin></app-nav-admin>
+<app-nav-admin *ngIf="false"></app-nav-admin>
 
-<app-nav-logged-in></app-nav-logged-in>
+<app-nav-logged-in *ngIf="false"></app-nav-logged-in>
 
 <div style="width: 100%">
   <router-outlet></router-outlet>
