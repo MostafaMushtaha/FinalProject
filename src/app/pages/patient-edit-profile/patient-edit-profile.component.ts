@@ -18,14 +18,9 @@ export class PatientEditProfileComponent implements OnInit {
 
   city: string;
 
-
   constructor() {
 
   }
-
-  // phaseTwo(): void {
-  //   this.router.navigateByUrl('/patient-signup-phase-2');
-  // }
 
   ngOnInit(): void {
     let today = new Date();
