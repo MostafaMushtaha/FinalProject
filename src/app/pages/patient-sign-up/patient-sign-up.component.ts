@@ -17,15 +17,10 @@ export class PatientSignUpComponent implements OnInit {
   value: string;
 
   city: string;
-
-
+  
   constructor() {
     
    }
-
-  // phaseTwo(): void {
-  //   this.router.navigateByUrl('/patient-signup-phase-2');
-  // }
 
   ngOnInit(): void {
     let today = new Date();
