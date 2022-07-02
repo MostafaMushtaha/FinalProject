@@ -12,56 +12,10 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
 
-  userProfile;
-
-  isLoading: boolean = false;
-  isLoggedIn: boolean = false;
-
-  displayLoginModal: boolean = false;
-
-  langVar;
-  constructor(private authService: AuthenticationService, public langHelper: langHelper
-    ,  private router: Router) {
-    this.langVar = this.langHelper.initializeMode();
- 
+  constructor( public langHelper: langHelper , private router: Router) {
   }
-
-
 
   ngOnInit(): void {
-  }
-
-  getUserDetails() {
-    this.authService.GetAccountViaToken().subscribe(res => {
-      if (res.succeeded) {
-        this.userProfile = res.data;
-        this.isLoggedIn = true;
-      }
-    }, error => {
-      console.log(error);
-    });
-  }
-
-
-  loginFailed: boolean = false;
-  login() {
-  //   this.isLoading = true;
-  //   const model = {
-  //     usernameOrEmail: this.LoginForm.value.loginIdentifier,
-  //     password: this.LoginForm.value.password
-  //   }
-  //   this.authService.login(model).subscribe(res => {
-  //     if (res.succeeded) {
-  //       this.isLoading = false;
-  //       this.displayLoginModal = false;
-  //       this.LoginForm.reset();
-  //     }
-  //   }, error => {
-  //     console.log(error);
-  //     this.isLoading = false;
-  //     this.loginFailed = true;
-  //     this.LoginForm.reset();
-  //   });
   }
 
 }

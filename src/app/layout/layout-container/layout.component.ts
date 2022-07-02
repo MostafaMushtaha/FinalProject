@@ -11,21 +11,16 @@ import { delay, filter } from 'rxjs/operators';
 
 export class LayoutComponent implements OnInit {
 
-
-
   constructor(router: Router, viewportScroller: ViewportScroller) {
     router.events
       .pipe(filter((e): e is Scroll => e instanceof Scroll))
       .pipe(delay(1))   // <--------------------------- This line
       .subscribe((e) => {
         if (e.position) {
-          // backward navigation
           viewportScroller.scrollToPosition(e.position);
         } else if (e.anchor) {
-          // anchor navigation
           viewportScroller.scrollToAnchor(e.anchor);
         } else {
-          // forward navigation
           viewportScroller.scrollToPosition([0, 0]);
         }
       });

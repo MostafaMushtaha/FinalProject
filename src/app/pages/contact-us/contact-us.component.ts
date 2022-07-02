@@ -16,7 +16,6 @@ export class ContactUsComponent implements OnInit {
       this.disabledSubmitButton = false;
     }
   }
-  // (private fb: FormBuilder, private connectionService: ConnectionService) in constructor parameters
   constructor(private fb: FormBuilder) {
     this.contactForm = fb.group({
       'contactFormName': ['', Validators.required],
