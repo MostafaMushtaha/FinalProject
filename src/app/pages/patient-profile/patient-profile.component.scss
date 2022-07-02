@@ -105,7 +105,7 @@
 
 
 .medical-history {
-  width: 85%;
+  width: 95%;
   height: auto;
   margin: 5% auto;
   background-color: #EEEEEE;
@@ -134,7 +134,7 @@
   height: 25.2rem;
   overflow-x: auto;
   overflow-y: scroll;
-  margin: 0 5%;
+  margin: 0 2%;
 }
 
 .appointments-table {
@@ -142,6 +142,9 @@
   background-color: #fff;
 }
 
+table {
+  border-collapse: collapse;
+ }
 
 td,
 th {
@@ -151,13 +154,17 @@ th {
   width: 15rem;
 }
 
+.allergies-row {
+  height: 9rem;
+}
+
 .canecl-btn {
   display: block;
   margin: 5% auto;
 }
 
 .appointment-note {
-  margin-left: 5%;
+  margin-left: 2%;
   margin-top: 1%;
   color: red;
 }
@@ -178,10 +185,45 @@ th {
 
 .information-details {
   font-size: 1.2rem;
+  margin-bottom: 0;
 }
 
+
+.vacc-site {
+  background-image: linear-gradient(to right, blue, blue 50%, #000 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.vacc-site:before {
+  content: '';
+  background: blue;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.vacc-site:hover {
+  background-position: 0;
+}
+
+.vacc-site:hover::before {
+  width: 100%;
+}
+
+
 .user-medical-details-table {
-  width: 90%;
+  width: 95%;
   margin: 0% auto;
   background-color: #fff;
   box-shadow: rgb(0 0 0 / 29%) 0px 6px 18px 0px;
@@ -198,8 +240,8 @@ th {
 
 .prescription-block,
 .reports-block {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 2%;
+  margin-right: 2%;
   margin-bottom: 5%;
 }
 
