@@ -7,6 +7,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InsuranceSelectorComponent implements OnInit {
 
+  /*Select*/
+  InsuranceCompanies: '';
+  
+  /*Select*/
+  PaymentFrequency: '';
+  
+  /*Range (number)*/
+  PremiumRange: '';
+  DeductibleRange: '';
+  
+  /*CheckBox*/
+  Inpatient: '';
+  Outpatient: '';
+  Dental: '';
+  Optical: '';
+  Chronic: '';
+  WellBeing: '';
+  EmergencyEvacuation: '';
+  EmergencyRepatration: '';
+
+  /*Submit Btn (search)*/
+  SubmitInsuarnceSearch: '';
+  
+
   constructor() { }
 
   ngOnInit(): void {

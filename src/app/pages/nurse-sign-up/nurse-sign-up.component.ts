@@ -7,6 +7,91 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NurseSignUpComponent implements OnInit {
 
+  /*File upload*/
+  ImageUploadNurse: '';
+  
+  /*Submit btn*/
+  SubmitNurse: '';
+
+  /*Text*/
+  FirstNameNurse: '';
+  MiddleNameNurse: '';
+  LastNameNurse: '';
+
+  /*Date*/
+  BirthdateNurse: '';
+
+  /*Radio*/
+  MaleGenderNurse: '';
+  FemaleGenderNurse: '';
+
+  /*Email*/
+  EmailNurse: '';
+
+  /*Number*/
+  NumberNurse: '';
+
+  /*Passowrd*/
+  PasswordNurse: '';
+
+  /*Select*/
+  TitleNurse: '';
+  SpecialistNurse: '';
+
+  /*Number*/
+  YOENurse: '';
+
+  /*Select*/
+  City: '';
+  Area: '';
+
+  /*Number*/
+  FeesNurse: '';
+
+  /*CheckBox*/
+  MaleGenderWorkNurse: '';
+  FemaleGenderWorkNurse: '';
+
+  /*CheckBox*/
+  SundayNurse: '';
+  /*Time*/
+  SundayFromTimeNurse: '';
+  /*Time*/
+  SundayToTimeNurse: '';
+  /*Number*/
+  SundayBookingTimeNurse: '';
+  
+  MondayNurse: '';
+  MondayFromTimeNurse: '';
+  MondayToTimeNurse: '';
+  MondayBookingTimeNurse: '';
+  
+  TuesdayNurse: '';
+  TuesdayFromTimeNurse: '';
+  TuesdayToTimeNurse: '';
+  TuesdayBookingTimeNurse: '';
+  
+  WednesdayNurse: '';
+  WednesdayFromTimeNurse: '';
+  WednesdayToTimeNurse: '';
+  WednesdayBookingTimeNurse: '';
+  
+  ThursdayNurse: '';
+  ThursdayFromTimeNurse: '';
+  ThursdayToTimeNurse: '';
+  ThursdayBookingTimeNurse: '';
+  
+  FridayNurse: '';
+  FridayFromTimeNurse: '';
+  FridayToTimeNurse: '';
+  FridayBookingTimeNurse: '';
+  
+  SaturdayNurse: '';
+  SaturdayFromTimeNurse: '';
+  SaturdayToTimeNurse: '';
+  SaturdayBookingTimeNurse: '';
+  
+
   dates: Date[];
   rangeDates: Date[];
   minDate: Date;

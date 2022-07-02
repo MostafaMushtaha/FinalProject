@@ -12,6 +12,15 @@ import { langHelper } from 'src/app/services/helpers-and-utilities/language-help
 
 
 export class HomeComponent implements OnInit {
+  
+  SpecialitySearch:'';
+  City:'';
+  Area:'';
+  DoctorSearch:'';
+  NurseSearch:'';
+  MaleSearch:'';
+  FemaleSearch:'';
+  DoctorNurseNameSearch:'';
 
   
   langVar;
@@ -20,6 +29,5 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    
 }
 }

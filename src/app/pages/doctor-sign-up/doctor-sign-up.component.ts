@@ -7,6 +7,93 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DoctorSignUpComponent implements OnInit {
 
+  /*file upload*/
+  ImageUploadDoctor: '';
+  /*Submit btn*/
+  SubmitDoctor: '';
+
+  /*text*/
+  FirstNameDoctor: '';
+  MiddleNameDoctor: '';
+  LastNameDoctor: '';
+
+  /*date*/
+  BirthdateDoctor: '';
+  /*radio*/
+  MaleGenderDoctor: '';
+  FemaleGenderDoctor: '';
+
+  /*Email*/
+  EmailDoctor: '';
+  /*Number */
+  NumberDoctor: '';
+  /*Password*/
+  PasswordDoctor: '';
+
+  /*Select*/
+  TitleDoctor: '';
+  SpecialistDoctor: '';
+  SpecializationsOfSpecialistDoctor: '';
+  InsuranceCompanies: '';
+  
+  /*Number */
+  YOEDoctor: '';
+
+  /*Text*/
+  ClinicNameDoctor: '';
+  
+  /*Select*/
+  City: '';
+  Area: '';
+  
+  /*Text*/
+  LocationDoctor: '';
+
+  /*Number*/
+  FeesDoctor: '';
+  AVGWaitingTimeDoctor: '';
+
+  /*CheckBox*/
+  SundayDoctor: '';
+  /*Time*/
+  SundayFromTimeDoctor: '';
+  /*Time*/
+  SundayToTimeDoctor: '';
+  /*Number*/
+  SundayBookingTimeDoctor: '';
+
+  MondayDoctor: '';
+  MondayFromTimeDoctor: '';
+  MondayToTimeDoctor: '';
+  MondayBookingTimeDoctor: '';
+
+  TuesdayDoctor: '';
+  TuesdayFromTimeDoctor: '';
+  TuesdayToTimeDoctor: '';
+  TuesdayBookingTimeDoctor: '';
+
+  WednesdayDoctor: '';
+  WednesdayFromTimeDoctor: '';
+  WednesdayToTimeDoctor: '';
+  WednesdayBookingTimeDoctor: '';
+
+  ThursdayDoctor: '';
+  ThursdayFromTimeDoctor: '';
+  ThursdayToTimeDoctor: '';
+  ThursdayBookingTimeDoctor: '';
+
+  FridayDoctor: '';
+  FridayFromTimeDoctor: '';
+  FridayToTimeDoctor: '';
+  FridayBookingTimeDoctor: '';
+
+  SaturdayDoctor: '';
+  SaturdayFromTimeDoctor: '';
+  SaturdayToTimeDoctor: '';
+  SaturdayBookingTimeDoctor: '';
+  
+
+
   dates: Date[];
   rangeDates: Date[];
   minDate: Date;

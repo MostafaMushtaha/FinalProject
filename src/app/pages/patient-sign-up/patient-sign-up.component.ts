@@ -7,6 +7,52 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PatientSignUpComponent implements OnInit {
 
+  ImageUploadPatient:'';
+  SubmitPatient:'';
+  
+  FirstNamePatient:'';
+  MiddleNamePatient:'';
+  LastNamePatient:'';
+  
+  BirthdatePatient:'';
+  MaleGenderPatient:'';
+  FemaleGenderPatient:'';
+  
+  EmailPatient:'';
+  NumberPatient:'';
+  
+  City:'';
+  Area:'';
+  LocationPatient:'';
+  
+  PasswordPatient:'';
+  
+  BloodType:'';
+  ChronicDiseases:'';
+  
+  DrugAllergy:'';
+  DrugAllergyDetails:'';
+  FoodAllergy:'';
+  FoodAllergyDetails:'';
+  InsectAllergy:'';
+  InsectAllergyDetails:'';
+  LatexAllergy:'';
+  LatexAllergyDetails:'';
+  MoldAllergy:'';
+  MoldAllergyDetails:'';
+  PetAllergy:'';
+  PetAllergyDetails:'';
+  PollenAllergy:'';
+  PollenAllergyDetails:'';
+  
+  FirstDoseType:'';
+  FirstDoseDate:'';
+  SecondDoseType:'';
+  SecondDoseDate:'';
+  ThirdDoseType:'';
+  ThirdDoseDate:'';
+  
+
   dates: Date[];
   rangeDates: Date[];
   minDate: Date;
