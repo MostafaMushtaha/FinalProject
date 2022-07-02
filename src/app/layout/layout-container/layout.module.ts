@@ -32,9 +32,8 @@ import { LoginComponent } from 'src/app/pages/login/login.component';
 import { InsuranceHomeComponent } from 'src/app/pages/insurance-home/insurance-home.component';
 import { PatientSignUpComponent } from 'src/app/pages/patient-sign-up/patient-sign-up.component';
 import { NurseSignUpComponent } from 'src/app/pages/nurse-sign-up/nurse-sign-up.component';
-import { DoctorSignUpOneComponent } from 'src/app/pages/doctor-sign-up-one/doctor-sign-up-one.component';
+import { DoctorSignUpComponent } from 'src/app/pages/doctor-sign-up/doctor-sign-up.component';
 import { RadioButtonModule } from 'primeng/radiobutton'
-import { Patient2Component } from 'src/app/pages/patient2/patient2.component';
 import { SearchResultsComponent } from 'src/app/pages/search-results/search-results.component';
 import { DoctorProfileComponent } from 'src/app/pages/doctor-profile/doctor-profile.component';
 import { PatientProfileComponent } from 'src/app/pages/patient-profile/patient-profile.component';
@@ -62,8 +61,7 @@ import { NurseEditProfileComponent } from 'src/app/pages/nurse-edit-profile/nurs
     LoginComponent,
     PatientSignUpComponent,
     NurseSignUpComponent,
-    DoctorSignUpOneComponent,
-    Patient2Component,
+    DoctorSignUpComponent,
     SearchResultsComponent,
     DoctorProfileComponent,
     PatientProfileComponent,
