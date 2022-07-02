@@ -2,8 +2,8 @@
   <form>
     <div class="form-row row-1">
       <div class="insurer-company">
-        <label for="insurer-company">Insurer Company</label>
-        <select class="form-control insurer-company-dropdown" name="InsurerCompanyName" id="insurer-company" size="4"
+        <label for="InsuranceCompanies">Insurer Company</label>
+        <select class="form-control insurer-company-dropdown" name="InsuranceCompanies" id="InsuranceCompanies" size="4"
           required>
           <option value="AXA">AXA</option>
           <option value="Allianz">Allianz</option>
@@ -16,8 +16,8 @@
         </select>
       </div>
       <div class="payment-frequency">
-        <label for="payment-frequency">Payment Frequency</label>
-        <select class="form-control payment-frequency-dropdown" name="PaymentFrequency" id="payment-frequency" size="4"
+        <label for="PaymentFrequency">Payment Frequency</label>
+        <select class="form-control payment-frequency-dropdown" name="PaymentFrequency" id="PaymentFrequency" size="4"
           required>
           <option value="Monthly">Monthly</option>
           <option value="Annual">Annual</option>
@@ -28,15 +28,15 @@
     </div>
     <div class="form-row row-2">
       <div class="premium-range">
-        <label class="premium-range-label" for="premium-range">Premium Range</label>
-        <input class="premium-range-input" id="premium-range" type="range" name="PremiumRange" value="0" min="0"
+        <label class="premium-range-label" for="PremiumRange">Premium Range</label>
+        <input class="premium-range-input" type="range" id="PremiumRange" name="PremiumRange" value="0" min="0"
           max="10000" oninput="this.nextElementSibling.value = this.value">
         <output>0</output>
         <span class="currency"> EGP</span>
       </div>
       <div class="deductible-range">
-        <label class="deductible-range-label" for="deductible-range">Deductible Range</label>
-        <input class="deductible-range-input" id="deductible-range" type="range" name="DeductibleRange" value="0"
+        <label class="deductible-range-label" for="DeductibleRange">Deductible Range</label>
+        <input class="deductible-range-input" type="range" id="DeductibleRange" name="DeductibleRange" value="0"
           min="0" max="10000" oninput="this.nextElementSibling.value = this.value">
         <output>0</output>
         <span class="currency"> EGP</span>
@@ -48,55 +48,55 @@
 
       <label class="benefits-label" for="Benefits">Benefits</label>
       <div>
-        <label class="form-check-label" for="inpatient">Inpatient
+        <label class="form-check-label" for="Inpatient">Inpatient
           <input onclick="return false;" class="form-check-input benefits-input" type="checkbox" name="Inpatient"
-            id="inpatient" checked><span class="definition">(a patient who lives in
+            id="Inpatient" checked><span class="definition">(a patient who lives in
             hospital while under treatment)</span></label>
       </div>
       <div>
-        <label class="form-check-label" for="outpatient">Outpatient
-          <input class="form-check-input benefits-input" type="checkbox" name="Outpatient" id="outpatient"><span
+        <label class="form-check-label" for="Outpatient">Outpatient
+          <input class="form-check-input benefits-input" type="checkbox" name="Outpatient" id="Outpatient"><span
             class="definition">(a patient who attends a hospital
             for treatment without staying there overnight.)</span></label>
       </div>
       <div>
-        <label class="form-check-label" for="dental">Dental <input class="form-check-input benefits-input"
-            type="checkbox" name="Dental" id="dental"><span class="definition">(relating to the teeth and gums. /
+        <label class="form-check-label" for="Dental">Dental <input class="form-check-input benefits-input"
+            type="checkbox" name="Dental" id="Dental"><span class="definition">(relating to the teeth and gums. /
             relating to dentistry.)</span></label>
       </div>
       <div>
-        <label class="form-check-label" for="optical">Optical <input class="form-check-input benefits-input"
-            type="checkbox" name="Optical" id="optical"><span class="definition">(will often cover eye exams, contact
+        <label class="form-check-label" for="Optical">Optical <input class="form-check-input benefits-input"
+            type="checkbox" name="Optical" id="Optical"><span class="definition">(will often cover eye exams, contact
             lenses, and eyeglass lenses and frames.)</span></label>
       </div>
       <div>
-        <label class="form-check-label" for="chronic">Chronic <input class="form-check-input benefits-input"
-            type="checkbox" name="Chronic" id="chronic"><span class="definition">(ongoing or long-term monitoring by
+        <label class="form-check-label" for="Chronic">Chronic <input class="form-check-input benefits-input"
+            type="checkbox" name="Chronic" id="Chronic"><span class="definition">(ongoing or long-term monitoring by
             consultations, examinations, check-ups, tests.)</span></label>
       </div>
       <div>
-        <label class="form-check-label" for="well-being">Well Being <input class="form-check-input benefits-input"
-            type="checkbox" name="WellBeing" id="well-being"><span class="definition">(refers to being physically,
+        <label class="form-check-label" for="WellBeing">Well Being <input class="form-check-input benefits-input"
+            type="checkbox" name="WellBeing" id="WellBeing"><span class="definition">(refers to being physically,
             mentally, and emotionally healthy)</span></label>
       </div>
       <div>
-        <label class="form-check-label" for="emergency-evacuation">Emergencey Evacuation <input
+        <label class="form-check-label" for="EmergencyEvacuation">Emergencey Evacuation <input
             class="form-check-input benefits-input" type="checkbox" name="EmergencyEvacuation"
-            id="emergency-evacuation"><span class="definition">(the transportation from one hospital to another in the
+            id="EmergencyEvacuation"><span class="definition">(the transportation from one hospital to another in the
             case of serious illness or an injury that requires urgent treatment. It occurs only when the local hospital
             can't provide adequate treatment.)</span></label>
       </div>
       <div>
-        <label class="form-check-label" for="emergency-repatration">Emergencey Repatration <input
+        <label class="form-check-label" for="EmergencyRepatration">Emergencey Repatration <input
             class="form-check-input benefits-input" type="checkbox" name="EmergencyRepatration"
-            id="emergency-repatration"><span class="definition">(provide coverage for transportation of a traveler to
+            id="EmergencyRepatration"><span class="definition">(provide coverage for transportation of a traveler to
             the nearest adequate medical facility in the event of a medical emergency during their trip. Repatriation
             can transport a traveler's remains back home.)</span></label>
       </div>
     </div>
 
     <div class="form-row row-4">
-      <input class="search-btn btn btn-primary" name="SubmitInsuarnceSearch" type="submit" value="Search">
+      <input class="search-btn btn btn-primary" name="SubmitInsuarnceSearch" id="SubmitInsuarnceSearch" type="submit" value="Search">
     </div>
 
   </form>
@@ -140,7 +140,7 @@
             <option value="0">0</option>
           </select></td>
         <td>
-          <p class="premium-price">1,500 <span class="egy-month">EGP/Month</span></p>
+          <p class="premium-price">1,500 <span class="egp-date">EGP/Month</span></p>
         </td>
         <td><a href=""><button type="button" name="ViewQuote" class="btn btn-primary view-btn">View</button></a></td>
       </tr>
@@ -161,7 +161,7 @@
             <option value="0">0</option>
           </select></td>
         <td>
-          <p class="premium-price">1,500 <span class="egy-month">EGP/Month</span></p>
+          <p class="premium-price">1,500 <span class="egp-date">EGP/H yr.</span></p>
         </td>
         <td><a href=""><button type="button" name="ViewQuote" class="btn btn-primary view-btn">View</button></a></td>
       </tr>
@@ -182,7 +182,7 @@
             <option value="0">0</option>
           </select></td>
         <td>
-          <p class="premium-price">1,500 <span class="egy-month">EGP/Month</span></p>
+          <p class="premium-price">1,500 <span class="egp-date">EGP/Qr.</span></p>
         </td>
         <td><a href=""><button type="button" name="ViewQuote" class="btn btn-primary view-btn">View</button></a></td>
       </tr>
@@ -203,7 +203,7 @@
             <option value="0">0</option>
           </select></td>
         <td>
-          <p class="premium-price">1,500 <span class="egy-month">EGP/Month</span></p>
+          <p class="premium-price">5,500 <span class="egp-date">EGP/Year</span></p>
         </td>
         <td><a href=""><button type="button" name="ViewQuote" class="btn btn-primary view-btn">View</button></a></td>
       </tr>
