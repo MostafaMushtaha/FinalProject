@@ -19,6 +19,11 @@ import { InsuranceSelectorComponent } from 'src/app/pages/insurance-selector/ins
 import { PatientEditProfileComponent } from 'src/app/pages/patient-edit-profile/patient-edit-profile.component';
 import { DoctorEditProfileComponent } from 'src/app/pages/doctor-edit-profile/doctor-edit-profile.component';
 import { NurseEditProfileComponent } from 'src/app/pages/nurse-edit-profile/nurse-edit-profile.component';
+import { AdminViewAllAppsComponent } from 'src/app/pages/admin-view-all-apps/admin-view-all-apps.component';
+import { AdminViewAllDocsComponent } from 'src/app/pages/admin-view-all-docs/admin-view-all-docs.component';
+import { AdminViewAllNursesComponent } from 'src/app/pages/admin-view-all-nurses/admin-view-all-nurses.component';
+import { AdminViewAllPatComponent } from 'src/app/pages/admin-view-all-pat/admin-view-all-pat.component';
+import { AdminRegRequestsComponent } from 'src/app/pages/admin-reg-requests/admin-reg-requests.component';
 
 
 
@@ -43,6 +48,11 @@ const routes: Routes = [
       { path: 'patient-edit-profile', component: PatientEditProfileComponent },
       { path: 'doctor-edit-profile', component: DoctorEditProfileComponent },
       { path: 'nurse-edit-profile', component: NurseEditProfileComponent },
+      { path: 'admin-view-all-apps', component: AdminViewAllAppsComponent },
+      { path: 'admin-view-all-docs', component: AdminViewAllDocsComponent },
+      { path: 'admin-view-all-nurses', component: AdminViewAllNursesComponent },
+      { path: 'admin-view-all-pat', component: AdminViewAllPatComponent },
+      { path: 'admin-reg-requests', component: AdminRegRequestsComponent },
       { path: '', redirectTo: 'home', pathMatch: 'full' }
     ],
   }
